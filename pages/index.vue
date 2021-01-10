@@ -1,50 +1,30 @@
 <template>
-  <video-background
-    :src="require('@/assets/video/test-video-1.mp4')"
-    style="height: 100vh"
-    overlay="linear-gradient(45deg,rgba(247, 238, 127, 0.35),rgba(241, 166, 106, 0.75))"
-  >
-    <div class="header-text--container">
-      <h1 class="header-text--primary" style="color: black">Casa Patron</h1>
-      <h3 class="header-text--secondary">Explore New Mexico's Enchantments</h3>
-    </div>
-  </video-background>
+  <div>
+    <header>
+      <NavBar />
+      <VideoHeader />
+    </header>
+  </div>
 </template>
 
 <script>
-export default {}
+import NavBar from '@/components/navigation/NavBar.vue'
+import VideoHeader from '@/components/header/VideoHeader.vue'
+export default {
+  name: 'Home',
+  components: {
+    VideoHeader,
+    NavBar,
+  },
+}
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&display=swap');
 /* Sample `apply` at-rules with Tailwind CSS
 .container {
 @apply min-h-screen flex justify-center items-center text-center mx-auto;
 }
 */
-.header-text--container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  height: 100%;
-}
-.header-text--primary {
-  font-family: 'Montserrat', sans-serif;
-  letter-spacing: -1px;
-  font-size: 10rem;
-  margin: 0 auto;
-  text-shadow: 0px 0px 10px rgba(247, 238, 127, 1);
-}
-
-.header-text--secondary {
-  font-family: 'Lato', sans-serif;
-  font-size: 1.7rem;
-  margin: 0 auto;
-  text-shadow: 0px 0px 7px #f7ee7f;
-  color: black;
-  text-transform: uppercase;
-}
 
 .container {
   margin: 0 auto;
