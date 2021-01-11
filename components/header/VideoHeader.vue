@@ -6,7 +6,7 @@
     <video-background
       v-else
       :src="require('@/assets/video/Casa-Patron-Splash-1.mp4')"
-      style="height: 100vh"
+      style="height: 600px"
       overlay="linear-gradient(45deg,rgba(247, 238, 127, 0.15),rgba(241, 166, 106, 0.25))"
     >
       <TextHeader />
