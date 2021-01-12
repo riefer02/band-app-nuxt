@@ -8,9 +8,9 @@
     </div>
     <div class="container mx-auto bg-red-300 px-4 py-4">
       <div class="w-full overflow-hidden"><About /></div>
-
+      <div class="w-full overflow-hidden"><Events /></div>
       <div class="w-full overflow-hidden"><Pricing /></div>
-
+      <div class="w-full overflow-hidden"><Testimonial /></div>
       <div class="w-full overflow-hidden"><Booking /></div>
     </div>
     <div class="w-full overflow-hidden"><Footer /></div>
@@ -21,7 +21,9 @@
 import NavBar from '@/components/navigation/NavBar.vue'
 import Header from '@/components/header/Header.vue'
 import About from '@/components/about/About.vue'
+import Events from '@/components/events/Events.vue'
 import Pricing from '@/components/pricing/Pricing.vue'
+import Testimonial from '@/components/testimonial/Testimonial.vue'
 import Booking from '@/components/booking/Booking.vue'
 import Footer from '@/components/footer/Footer.vue'
 
@@ -31,13 +33,16 @@ export default {
     NavBar,
     Header,
     About,
+    Events,
     Pricing,
+    Testimonial,
     Booking,
     Footer,
   },
 }
 </script>
 
+Testimonal
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 /* Sample `apply` at-rules with Tailwind CSS
