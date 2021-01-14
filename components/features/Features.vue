@@ -2,12 +2,14 @@
   <div class="bg-orange-400 py-5 px-4">
     <div class="bg-yellow-400 py-5 px-4">
       <div class="flex flex-col md:flex-row bg-yellow-400">
-        <div
-          class="block bg-orange-400 w-full px-3 py-3 md:w-2/3 h-40 md:order-1"
-        >
+        <div class="block bg-orange-400 w-full px-3 py-3 md:w-2/3 md:order-1">
           Features Section
-          <div class="block bg-white">Features Title</div>
-          <div class="block bg-yellow-400 h-20">Features List Area</div>
+          <div class="block bg-white">
+            <SectionHeaderText text="Accessible and Innovative" />
+          </div>
+          <div class="block bg-yellow-400">
+            <FeaturesList :features="features" />
+          </div>
         </div>
         <div class="block bg-red-500 w-full md:w-1/3 h-40 md:order-2">
           Features Picture
@@ -18,7 +20,35 @@
 </template>
 
 <script>
-export default {}
+import SectionHeaderText from '@/components/typography/SectionHeaderText.vue'
+import FeaturesList from '@/components/features/FeaturesList.vue'
+export default {
+  components: {
+    SectionHeaderText,
+    FeaturesList,
+  },
+  data() {
+    return {
+      features: [
+        {
+          title: 'Accessibility',
+          description:
+            '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        },
+        {
+          title: 'Modular',
+          description:
+            '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        },
+        {
+          title: 'Activities',
+          description:
+            '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        },
+      ],
+    }
+  },
+}
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped></style>

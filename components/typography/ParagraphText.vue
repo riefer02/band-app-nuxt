@@ -1,6 +1,6 @@
 <template>
   <p class="text-sm px-2 py-2">
-    <span class="font-bold">{{ leaderText }}</span
+    <span class="font-bold">{{ leadText }}</span
     >{{ trailText }}
   </p>
 </template>
@@ -14,10 +14,10 @@ export default {
     },
   },
   computed: {
-    leaderText() {
-      let leaderText = this.text.split(' ', 3).join(' ')
-      leaderText = leaderText + ' '
-      return leaderText
+    leadText() {
+      let leadText = this.text.split(' ', 3).join(' ')
+      leadText = leadText + ' '
+      return leadText
     },
     trailText() {
       const trailText = this.text.split(' ').splice(4).join(' ')
@@ -27,4 +27,4 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped></style>
