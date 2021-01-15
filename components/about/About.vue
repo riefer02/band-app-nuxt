@@ -1,19 +1,23 @@
 <template>
-  <div class="bg-orange-400 py-5 px-4">
-    <div class="flex flex-col md:flex-row bg-yellow-400 px-4 py-4">
-      <div class="bg-green-400 py-2 px-2 w-full md:w-2/3 md:order-2">
-        <div class="h-10 bg-red-400">
-          <SectionHeaderText text="Welcome to Casa Patron" />
+  <div class="py-5 px-4">
+    <div class="py-5 px-4">
+      <div
+        class="flex flex-col md:flex-row px-4 py-4 bg-white text-black rounded-lg shadow-lg"
+      >
+        <div class="py-2 px-2 w-full md:w-2/3 md:order-2">
+          <div class="h-10">
+            <SectionHeaderText text="Welcome to Casa Patron" />
+          </div>
+          <div class="">
+            <ParagraphText :text="placeholderText" />
+          </div>
+          <div class="flex justify-center px-2 py-2">
+            <Button text="Learn More" />
+          </div>
         </div>
-        <div class="bg-orange-400">
-          <ParagraphText :text="placeholderText" />
+        <div class="w-full h-40 md:w-1/3 bg-red-500 md:order-1">
+          About Picture
         </div>
-        <div class="flex justify-center bg-pink-400 px-2 py-2">
-          <Button text="Learn More" />
-        </div>
-      </div>
-      <div class="bg-red-500 w-full md:w-1/3 h-40 md:order-1">
-        About Picture
       </div>
     </div>
   </div>

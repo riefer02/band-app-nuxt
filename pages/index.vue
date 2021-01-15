@@ -1,12 +1,12 @@
 <template>
-  <div class="flex flex-wrap overflow-hidden">
+  <div class="flex flex-wrap overflow-hidden bg-yellow-300">
     <div class="w-full overflow-hidden">
       <NavBar />
     </div>
     <div class="w-full overflow-hidden">
       <Header />
     </div>
-    <div class="container mx-auto bg-red-300 px-4 py-4">
+    <div class="container mx-auto md:px-4 md:py-4">
       <div class="w-full overflow-hidden"><About /></div>
       <div class="w-full overflow-hidden"><Features /></div>
       <div class="w-full overflow-hidden"><Events /></div>

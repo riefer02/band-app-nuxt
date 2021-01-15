@@ -1,5 +1,5 @@
 <template>
-  <ul class="flex flex-col">
+  <ul class="flex flex-col px-2 py-2">
     <li v-for="feature in features" :key="feature.title">
       <FeaturesItem :feature="feature" />
     </li>

@@ -1,13 +1,14 @@
 <template>
-  <div class="bg-orange-400 py-5 px-4">
-    <div class="bg-yellow-400 py-5 px-4">
-      <div class="flex flex-col md:flex-row bg-yellow-400">
-        <div class="block bg-orange-400 w-full px-3 py-3 md:w-2/3 md:order-1">
-          Features Section
-          <div class="block bg-white">
-            <SectionHeaderText text="Accessible and Innovative" />
+  <div class="py-5 px-4">
+    <div class="py-5 px-4">
+      <div
+        class="flex flex-col md:flex-row bg-white text-black rounded-lg shadow-lg"
+      >
+        <div class="block w-full px-3 py-3 md:w-2/3 md:order-1">
+          <div class="block">
+            <SectionHeaderText text="Caracteristicas de Patron" />
           </div>
-          <div class="block bg-yellow-400">
+          <div class="block">
             <FeaturesList :features="features" />
           </div>
         </div>

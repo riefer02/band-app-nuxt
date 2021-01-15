@@ -1,28 +1,84 @@
 <template>
-  <div class="bg-orange-400 py-5 px-4">
-    <div class="px-4 py-5 bg-yellow-400">
-      <div class="block bg-white">Events Section Title</div>
-      <div class="flex flex-col md:flex-row bg-yellow-400">
-        <div class="block bg-red-500 px-2 py-2 w-full md:w-1/3">
-          Events #1
-          <div class="h-10 bg-red-400">Event Header</div>
-          <div class="h-20 bg-blue-400">Event Picture</div>
-          <div class="h-20 bg-orange-400">Event Description</div>
-          <div class="h-10 bg-pink-400">Buttons</div>
+  <div class="py-5 px-4">
+    <div class="px-4 py-5">
+      <div class="block">
+        <SectionHeaderText text="Local Attractions" />
+      </div>
+      <div class="flex flex-col md:flex-row justify-center">
+        <div class="max-w-lg shadow-lg rounded overflow-hidden m-4 sm:flex">
+          <div
+            class="h-48 sm:h-auto sm:w-48 md:w-64 flex-none bg-cover bg-center rounded rounded-t sm:rounded sm:rounded-l text-center overflow-hidden"
+            style="background-image: url('https://unsplash.it/804/800')"
+          ></div>
+
+          <!-- card-content -->
+          <div
+            class="px-6 py-4 bg-white text-black shadow-inner shadow-lg overflow-hidden"
+          >
+            <h2 class="mb-2 font-black">Hello Tailwind!</h2>
+            <p class="mb-4 text-grey-dark text-sm">
+              Learning Tailwind is incredibly easy. The team has done a
+              wonderful job with the documentation. This is pretty amazing, I
+              must say.
+            </p>
+
+            <!-- button -->
+            <button
+              class="py-3 px-4 bg-red-500 hover:bg-purple-light text-black font-bold rounded-full mt-1 mb-2"
+            >
+              Learn More
+            </button>
+          </div>
         </div>
-        <div class="block bg-green-400 px-2 py-2 w-full md:w-1/3">
-          Events #2
-          <div class="h-10 bg-red-400">Event Header</div>
-          <div class="h-20 bg-blue-400">Event Picture</div>
-          <div class="h-20 bg-orange-400">Event Description</div>
-          <div class="h-10 bg-pink-400">Buttons</div>
+        <div class="max-w-lg shadow-lg rounded overflow-hidden m-4 sm:flex">
+          <div
+            class="h-48 sm:h-auto sm:w-48 md:w-64 flex-none bg-cover bg-center rounded rounded-t sm:rounded sm:rounded-l text-center overflow-hidden"
+            style="background-image: url('https://unsplash.it/804/800')"
+          ></div>
+
+          <!-- card-content -->
+          <div
+            class="px-6 py-4 bg-white text-black shadow-inner shadow-lg overflow-hidden"
+          >
+            <h2 class="mb-2 font-black">Hello Tailwind!</h2>
+            <p class="mb-4 text-grey-dark text-sm">
+              Learning Tailwind is incredibly easy. The team has done a
+              wonderful job with the documentation. This is pretty amazing, I
+              must say.
+            </p>
+
+            <!-- button -->
+            <button
+              class="py-3 px-4 bg-red-500 hover:bg-purple-light text-black font-bold rounded-full mt-1 mb-2"
+            >
+              Learn More
+            </button>
+          </div>
         </div>
-        <div class="block bg-purple-500 px-2 py-2 w-full md:w-1/3">
-          Events #3
-          <div class="h-10 bg-red-400">Event Header</div>
-          <div class="h-20 bg-blue-400">Event Picture</div>
-          <div class="h-20 bg-orange-400">Event Description</div>
-          <div class="h-10 bg-pink-400">Buttons</div>
+        <div class="max-w-lg shadow-lg rounded overflow-hidden m-4 sm:flex">
+          <div
+            class="h-48 sm:h-auto sm:w-48 md:w-64 flex-none bg-cover bg-center rounded rounded-t sm:rounded sm:rounded-l text-center overflow-hidden"
+            style="background-image: url('https://unsplash.it/804/800')"
+          ></div>
+
+          <!-- card-content -->
+          <div
+            class="px-6 py-4 bg-white text-black shadow-inner shadow-lg overflow-hidden"
+          >
+            <h2 class="mb-2 font-black">Hello Tailwind!</h2>
+            <p class="mb-4 text-grey-dark text-sm">
+              Learning Tailwind is incredibly easy. The team has done a
+              wonderful job with the documentation. This is pretty amazing, I
+              must say.
+            </p>
+
+            <!-- button -->
+            <button
+              class="py-3 px-4 bg-red-500 hover:bg-purple-light text-black font-bold rounded-full mt-1 mb-2"
+            >
+              Learn More
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -30,7 +86,12 @@
 </template>
 
 <script>
-export default {}
+import SectionHeaderText from '@/components/typography/SectionHeaderText.vue'
+export default {
+  components: {
+    SectionHeaderText,
+  },
+}
 </script>
 
 <style lang="scss" scoped></style>
