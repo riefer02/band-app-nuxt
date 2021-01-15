@@ -1,6 +1,6 @@
 <template>
-  <div class="py-5">
-    <div class="py-5">
+  <div class="py-5 px-4">
+    <div class="">
       <div class="flex flex-col md:flex-row">
         <div
           class="max-w-screen-xl mt-24 px-8 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-16 mx-auto bg-white text-black rounded-lg shadow-lg"

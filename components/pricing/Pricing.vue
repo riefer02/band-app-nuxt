@@ -6,7 +6,7 @@
         <div class="max-w-full md:max-w-6xl mx-auto my-3 md:px-8">
           <div class="relative block flex flex-col md:flex-row items-center">
             <div
-              class="w-11/12 max-w-sm sm:w-3/5 lg:w-1/3 sm:my-5 my-8 relative z-0 rounded-lg shadow-lg md:-mr-4"
+              class="w-11/12 max-w-sm md:w-3/5 lg:w-1/3 sm:my-5 my-8 relative z-0 rounded-lg shadow-lg md:-mr-4"
             >
               <div
                 class="bg-white text-black rounded-lg shadow-inner shadow-lg overflow-hidden"
@@ -96,7 +96,7 @@
               </div>
             </div>
             <div
-              class="w-full max-w-md sm:w-2/3 lg:w-1/3 sm:my-5 my-8 relative z-10 bg-white rounded-lg shadow-lg"
+              class="w-full max-w-md md:w-2/3 lg:w-1/3 sm:my-5 my-8 relative z-10 bg-white rounded-lg shadow-lg"
             >
               <div
                 class="text-sm leading-none rounded-t-lg bg-gray-200 text-black font-semibold uppercase py-4 text-center tracking-wide"
@@ -189,7 +189,7 @@
               </div>
             </div>
             <div
-              class="w-11/12 max-w-sm sm:w-3/5 lg:w-1/3 sm:my-5 my-8 relative z-0 rounded-lg shadow-lg md:-ml-4"
+              class="w-11/12 max-w-sm md:w-3/5 lg:w-1/3 sm:my-5 my-8 relative z-0 rounded-lg shadow-lg md:-ml-4"
             >
               <div
                 class="bg-white text-black rounded-lg shadow-inner shadow-lg overflow-hidden"
