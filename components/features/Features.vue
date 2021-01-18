@@ -1,21 +1,20 @@
 <template>
-  <div class="py-5 px-4">
-    <div class="py-5 px-4">
-      <div
-        class="flex flex-col md:flex-row bg-white text-black rounded-lg shadow-lg"
-      >
-        <div class="block w-full px-3 py-3 md:w-2/3 md:order-1">
-          <div class="block">
-            <SectionHeaderText text="Caracteristicas de Patron" />
-          </div>
-          <div class="block">
-            <FeaturesList :features="features" />
-          </div>
+  <div class="my-16">
+    <div
+      class="flex flex-col md:flex-row bg-white text-black rounded-lg shadow-lg"
+    >
+      <div class="block w-full px-3 py-3 md:w-2/3 md:order-1 xl:p-16">
+        <div class="block">
+          <SectionHeaderText text="Caracteristicas de Patron" />
         </div>
-        <div class="block bg-red-500 w-full md:w-1/3 h-40 md:order-2">
-          Features Picture
+        <div class="block">
+          <FeaturesList :features="features" />
         </div>
       </div>
+      <div
+        class="w-full bg-cover h-40 md:h-auto md:min-h-full md:w-1/3 order-1 rounded-b-lg rounded-t-none md:rounded-r-lg md:rounded-l-none flex-grow"
+        style="background-image: url('https://unsplash.it/804/800')"
+      ></div>
     </div>
   </div>
 </template>

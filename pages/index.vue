@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-wrap overflow-hidden bg-yellow-300">
+  <div class="flex flex-wrap overflow-hidden bg-yellow-300 linear-gradient">
     <div class="w-full overflow-hidden">
       <NavBar />
     </div>
@@ -63,5 +63,15 @@ h6 {
 
 p {
   font-family: 'Montserrat', sans-serif;
+}
+
+.linear-gradient {
+  background: rgb(255, 224, 95);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 224, 95, 1) 0%,
+    rgba(255, 254, 144, 1) 50%,
+    rgba(255, 221, 93, 1) 100%
+  );
 }
 </style>
