@@ -1,9 +1,9 @@
 <template>
-  <div class="mt-12 mb-4">
+  <div class="mt-12 mb-4 px-4">
     <div
       class="flex flex-col md:flex-row bg-white text-black rounded-lg shadow-lg"
     >
-      <div class="py-2 px-2 w-full md:w-2/3 md:order-2 xl:p-16">
+      <div class="w-full md:w-2/3 md:order-2 p-10 xl:p-16">
         <div class="h-10">
           <SectionHeaderText text="Welcome to Casa Patron" />
         </div>
@@ -15,7 +15,7 @@
         </div>
       </div>
       <div
-        class="w-full bg-cover h-40 md:h-auto md:min-h-full md:w-1/3 order-1 rounded-b-lg rounded-t-none md:rounded-l-lg md:rounded-r-none flex-grow"
+        class="w-full bg-cover h-64 md:h-auto md:min-h-full md:w-1/3 order-1 rounded-b-lg rounded-t-none md:rounded-l-lg md:rounded-r-none flex-grow"
         style="background-image: url('https://unsplash.it/804/800')"
       ></div>
     </div>

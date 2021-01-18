@@ -1,5 +1,5 @@
 <template>
-  <div class="my-8">
+  <div class="my-8 px-4">
     <!-- <div class="block"><SectionHeaderText text="Pricing" /></div> -->
     <div class="flex flex-col md:flex-row">
       <div class="max-w-full md:max-w-6xl mx-auto my-3 md:px-8">
