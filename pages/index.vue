@@ -3,7 +3,7 @@
     <div class="w-full overflow-hidden">
       <NavBar />
     </div>
-    <div class="w-full overflow-hidden">
+    <div class="w-full overflow-hidden shadow-md">
       <Header />
     </div>
     <div class="container mx-auto md:px-4 md:py-4">
