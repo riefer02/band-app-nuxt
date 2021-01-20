@@ -14,24 +14,24 @@
         </h3>
       </div>
       <div class="flex justify-center pt-5">
-        <CallToActionBtn text="Book Now" />
+        <Button text="Book Now" />
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import CallToActionBtn from '@/components/buttons/CallToActionBtn.vue'
+import Button from '@/components/buttons/Button.vue'
 export default {
   components: {
-    CallToActionBtn,
+    Button,
   },
 }
 </script>
 
 <style scoped>
 .header-text-shadow {
-  text-shadow: 1px 0px 6px #d5ac4e;
+  text-shadow: 1px 0px 6px rgba(255, 254, 144, 1);
   font-family: 'Lobster', cursive;
 }
 </style>
