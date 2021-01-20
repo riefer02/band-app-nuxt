@@ -12,9 +12,10 @@
             <FeaturesList :features="features" />
           </div>
         </div>
-        <div class="block bg-red-500 w-full md:w-1/3 h-40 md:order-2">
-          Features Picture
-        </div>
+        <div
+          class="block bg-red-500 w-full md:w-1/3 h-40 md:order-2"
+          style="background-image: url('https://unsplash.it/804/800')"
+        ></div>
       </div>
     </div>
   </div>
