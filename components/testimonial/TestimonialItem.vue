@@ -7,7 +7,7 @@
         <img
           src="https://unsplash.it/804/800"
           alt="profile image"
-          class="w-full h-full p-2 sm:p-0 rounded-full sm:rounded-lg sm:rounded-r-none mx-auto shadow-inner shadow-lg"
+          class="bg-cover w-full h-full p-2 sm:p-0 rounded-full sm:rounded-lg sm:rounded-r-none mx-auto shadow-inner shadow-lg"
         />
       </div>
       <div class="p-0 sm:p-2 md:p-4">
