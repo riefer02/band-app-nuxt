@@ -95,7 +95,7 @@
             </div>
           </div>
           <div
-            class="w-full max-w-md md:w-2/3 lg:w-1/3 sm:my-5 my-8 relative z-10 bg-white rounded-lg shadow-lg"
+            class="w-full max-w-md md:w-2/3 lg:w-1/3 sm:my-5 my-8 relative z-1 bg-white rounded-lg shadow-lg"
           >
             <div
               class="text-sm leading-none rounded-t-lg bg-gray-200 text-black font-semibold uppercase py-4 text-center tracking-wide"

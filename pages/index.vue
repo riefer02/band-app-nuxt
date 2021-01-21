@@ -57,8 +57,7 @@ h6 {
   font-family: 'Lobster', cursive;
 }
 
-p,
-a {
+p {
   font-family: 'Montserrat', sans-serif;
 }
 

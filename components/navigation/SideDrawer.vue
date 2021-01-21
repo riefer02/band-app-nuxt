@@ -1,11 +1,14 @@
 <template>
-  <div class="shadow-inner shadow-lg">
-    <!--creating the button to handle opening the navbar-->
+  <div class="">
     <nav
-      class="bg-white flex items-center justify-start fixed top-0 left-0 w-full"
+      class="shadow-inner shadow-lg flex items-center justify-start fixed top-0 left-0 md:h-1/10 w-full transition-colors duration-400 ease-in"
+      :class="[
+        { 'bg-white': scrollPosition >= 539 },
+        { 'nav-yellow-bg': scrollPosition <= 540 || scrollPosition === 0 },
+      ]"
     >
       <span
-        class="mobile-nav-open-icon cursor-pointer text-3xl mr-8 ml-12 text-black"
+        class="mobile-nav-open-icon cursor-pointer text-3xl lg:text-3xl mr-8 ml-12 p-2 text-black"
         @click="toggleNav()"
         >&#9776;</span
       >
@@ -21,7 +24,7 @@
     <!--the would be the drawer and it's content-->
     <div
       id="mySidenav"
-      class="sidenav-container bg-white flex flex-col items-center h-full overflow-x-hidden pt-2 fixed top-0 left-0 w-0"
+      class="sidenav-container transition-all bg-white flex flex-col items-center h-full overflow-x-hidden pt-2 fixed top-0 left-0 w-0 shadow-inner shadow-lg"
       :class="[{ 'open-drawer': isOpen }, { 'close-drawer': !isOpen }]"
     >
       <span
@@ -34,69 +37,35 @@
           >&times;</a
         >
       </span>
-      <a
-        id="home-link"
-        class="block text-xl mx-0 my-2 no-underline"
-        href="#home"
-        @click="toggleNav()"
-        >Home</a
-      >
-      <a
-        class="block text-xl mx-0 my-2 no-underline hover:text-white"
-        id="about-link"
-        href="#about"
-        @click="toggleNav()"
-        >About</a
-      >
-      <a
-        class="block text-xl mx-0 my-2 no-underline hover:text-white"
-        id="featires-link"
-        href="#works"
-        @click="toggleNav()"
-        >Features</a
-      >
-      <a
-        class="block text-xl mx-0 my-2 no-underline hover:text-white"
-        id="events-link"
-        href="#works"
-        @click="toggleNav()"
-        >Events</a
-      >
-      <a
-        class="block text-xl mx-0 my-2 no-underline hover:text-white"
-        id="pricing-link"
-        href="#works"
-        @click="toggleNav()"
-        >Pricing</a
-      >
-      <a
-        class="block text-xl mx-0 my-2 no-underline hover:text-white"
-        id="booking-link"
-        href="#works"
-        @click="toggleNav()"
-        >Booking</a
-      >
-      <a
-        class="block text-xl mx-0 my-2 no-underline hover:text-white"
-        id="contact-link"
-        href="#contact"
-        @click="toggleNav()"
-        >Contact</a
-      >
+      <NavList @toggle-nav="toggleNav" />
     </div>
   </div>
 </template>
 
 <script>
+import NavList from '@/components/navigation/NavList.vue'
 export default {
+  components: {
+    NavList,
+  },
   data() {
     return {
       isOpen: false,
+      scrollPosition: 0,
     }
+  },
+  mounted() {
+    window.addEventListener('scroll', this.updateScrollPosition)
+  },
+  destroy() {
+    window.removeEventListener('scroll', this.updateScrollPosition)
   },
   methods: {
     toggleNav() {
       this.isOpen = !this.isOpen
+    },
+    updateScrollPosition() {
+      this.scrollPosition = window.scrollY
     },
   },
 }
@@ -104,8 +73,17 @@ export default {
 
 <style scoped>
 nav {
-  height: 10vh;
-  z-index: 1;
+  z-index: 2;
+}
+
+.nav-yellow-bg {
+  background: rgb(255, 224, 95);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 224, 95, 1) 0%,
+    rgba(255, 254, 144, 1) 50%,
+    rgba(255, 221, 93, 1) 100%
+  );
 }
 
 .backdrop-container {
@@ -117,32 +95,21 @@ nav {
     rgba(255, 221, 93, 0.5) 100%
   );
   z-index: 2;
-  animation: fadeIn 1.2s ease-in-out;
+  animation: fadeIn 0.6s cubic-bezier(0.1, 0.95, 0.77, 1.01);
 }
 
 .sidenav-container {
   z-index: 3;
   background-color: rgba(102, 126, 234, 1);
-  transition: 0.5s;
-}
-
-.sidenav-container a {
-  color: rgba(255, 221, 93, 1);
-  transition: all 0.3s;
+  transition: 0.3s;
 }
 
 .sidenav-container .closebtn {
   color: rgba(255, 221, 93, 1);
 }
 
-/* 1/1 base rules are converted successfully. */
-/* Gather results from the console with `copy(window.cssToTailwindResults)` */
-
-/* ℹ️ Base selector: .sidenav-container .drawer-close-button */
-/* ✨ TailwindCSS: "flex items-center justify-end h-12 mb-12 w-full" */
-
 .open-drawer {
-  width: 70%;
+  @apply w-3/4;
 }
 
 .open-backdrop {
@@ -155,6 +122,12 @@ nav {
 }
 
 .close-backdrop {
-  display: none;
+  opacity: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .open-drawer {
+    @apply w-2/12;
+  }
 }
 </style>
