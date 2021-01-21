@@ -1,20 +1,21 @@
 <template>
-  <nav>
-    <ul
-      class="lg:flex items-center justify-between text-base text-black-700 pt-4 lg:pt-0"
-    >
-      <li v-for="link in links" :key="link.text">
-        <NavLink :text="link.text" :link="link.link" />
-      </li>
-    </ul>
-  </nav>
+  <ul class="">
+    <li v-for="link in links" :key="link.text">
+      <NavItem
+        :text="link.text"
+        :link="link.link"
+        @toggle-nav="$emit('toggle-nav')"
+      />
+    </li>
+  </ul>
 </template>
 
 <script>
-import NavLink from '@/components/navigation/NavLink.vue'
+import NavItem from '@/components/navigation/NavItem.vue'
+
 export default {
   components: {
-    NavLink,
+    NavItem,
   },
   data() {
     return {

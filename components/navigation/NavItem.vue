@@ -1,7 +1,9 @@
 <template>
   <a
-    :href="link"
-    class="nav-link lg:p-4 py-3 px-0 block border-b-2 border-transparent xl:text-2xl hover:border-red-400"
+    :id="text + '-link'"
+    class="block text-3xl mx-0 my-2 no-underline hover:text-white"
+    href="#"
+    @click="$emit('toggle-nav')"
     >{{ text }}</a
   >
 </template>
@@ -11,18 +13,20 @@ export default {
   props: {
     text: {
       type: String,
-      default: 'Link Text Here',
+      default: '',
     },
     link: {
       type: String,
-      default: '',
+      default: '/',
     },
   },
 }
 </script>
 
 <style scoped>
-.nav-link {
+a {
   font-family: 'Lobster', cursive;
+  color: rgba(255, 221, 93, 1);
+  transition: all 0.3s;
 }
 </style>
