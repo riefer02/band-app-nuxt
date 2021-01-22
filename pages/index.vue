@@ -7,12 +7,14 @@
       <Header />
     </div>
     <div class="container mx-auto md:px-4 md:py-4">
-      <div class="w-full overflow-hidden"><About /></div>
-      <div class="w-full overflow-hidden"><Features /></div>
-      <div class="w-full overflow-hidden"><EventsList /></div>
-      <div class="w-full overflow-hidden"><Pricing /></div>
-      <div class="w-full overflow-hidden"><Testimonial /></div>
-      <div class="w-full overflow-hidden"><Booking /></div>
+      <div id="about" class="w-full overflow-hidden"><About /></div>
+      <div id="features" class="w-full overflow-hidden"><Features /></div>
+      <div id="events" class="w-full overflow-hidden"><EventsList /></div>
+      <div id="pricing" class="w-full overflow-hidden"><Pricing /></div>
+      <div id="testimonials" class="w-full overflow-hidden">
+        <Testimonial />
+      </div>
+      <div id="booking" class="w-full overflow-hidden"><Booking /></div>
     </div>
     <div class="w-full overflow-hidden"><Footer /></div>
   </div>

@@ -14,7 +14,7 @@
         </h3>
       </div>
       <div class="flex justify-center pt-5">
-        <Button text="Book Now" link="about" />
+        <Button text="Learn More" link="about" />
       </div>
     </div>
   </div>

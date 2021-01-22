@@ -1,5 +1,5 @@
 <template>
-  <div id="features" class="my-16 px-4">
+  <div class="my-16 px-4">
     <div
       class="flex flex-col md:flex-row bg-white text-black rounded-lg shadow-lg"
     >

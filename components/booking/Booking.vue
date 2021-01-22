@@ -1,5 +1,5 @@
 <template>
-  <div id="booking" class="flex flex-col md:flex-row px-4 pb-4">
+  <div class="flex flex-col md:flex-row px-4 pb-4">
     <div
       class="max-w-screen-xl mt-12 lg:mb-16 px-8 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-16 mx-auto bg-white text-black rounded-lg shadow-lg"
     >
