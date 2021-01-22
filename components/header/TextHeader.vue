@@ -8,13 +8,13 @@
           Casa Patron
         </h1>
         <h3
-          class="text-center antialiased text-3xl font-normal tracking-normal header-text-shadow font-serif"
+          class="text-center antialiased text-3xl font-normal tracking-normal header-subtext-shadow font-serif"
         >
           Explore New Mexico's Enchantments
         </h3>
       </div>
       <div class="flex justify-center pt-5">
-        <Button text="Book Now" />
+        <Button text="Book Now" link="about" />
       </div>
     </div>
   </div>
@@ -31,7 +31,12 @@ export default {
 
 <style scoped>
 .header-text-shadow {
-  text-shadow: 1px 0px 6px rgba(255, 254, 144, 1);
+  text-shadow: 0px 0px 3px rgba(242, 217, 128, 1);
+  font-family: 'Lobster', cursive;
+}
+
+.header-subtext-shadow {
+  text-shadow: 0px 0px 2px rgba(242, 217, 128, 1);
   font-family: 'Lobster', cursive;
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-12 mb-4 px-4">
+  <div id="about" class="mt-12 mb-4 px-4">
     <div
       class="flex flex-col md:flex-row bg-white text-black rounded-lg shadow-lg"
     >
@@ -11,7 +11,7 @@
           <ParagraphText :text="placeholderText" />
         </div>
         <div class="flex justify-center px-2 py-2">
-          <Button text="Learn More" />
+          <Button text="Learn More" link="features" />
         </div>
       </div>
       <div

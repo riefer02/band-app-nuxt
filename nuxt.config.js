@@ -40,7 +40,21 @@ export default {
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/fontawesome',
   ],
+
+  fontawesome: {
+    icons: {
+      solid: [
+        'faHome',
+        'faListUl',
+        'faCalendarAlt',
+        'faBook',
+        'faUsers',
+        'faDollarSign',
+      ],
+    },
+  },
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [

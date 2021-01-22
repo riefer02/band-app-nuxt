@@ -48,6 +48,9 @@ export default {
 </script>
 
 <style>
+html {
+  scroll-behavior: smooth;
+}
 h1,
 h2,
 h3,
@@ -62,12 +65,12 @@ p {
 }
 
 .linear-gradient {
-  background: rgb(255, 224, 95);
+  background: rgb(242, 217, 128);
   background: linear-gradient(
     90deg,
-    rgba(255, 224, 95, 1) 0%,
-    rgba(255, 254, 144, 1) 50%,
-    rgba(255, 221, 93, 1) 100%
+    rgba(242, 217, 128, 1) 0%,
+    rgba(254, 250, 212, 1) 50%,
+    rgba(242, 217, 128, 1) 100%
   );
 }
 </style>

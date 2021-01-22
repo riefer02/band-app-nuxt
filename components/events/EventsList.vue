@@ -1,5 +1,8 @@
 <template>
-  <div class="flex flex-col xl:flex-row justify-center align-middle">
+  <div
+    id="events"
+    class="flex flex-col xl:flex-row justify-center align-middle"
+  >
     <EventsItem v-for="item in items" :key="item.title" :item="item" />
   </div>
 </template>

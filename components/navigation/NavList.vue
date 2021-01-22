@@ -1,11 +1,7 @@
 <template>
   <ul class="">
     <li v-for="link in links" :key="link.text">
-      <NavItem
-        :text="link.text"
-        :link="link.link"
-        @toggle-nav="$emit('toggle-nav')"
-      />
+      <NavItem :link="link" @toggle-nav="$emit('toggle-nav')" />
     </li>
   </ul>
 </template>
@@ -20,9 +16,12 @@ export default {
   data() {
     return {
       links: [
-        { text: 'About', link: '/about' },
-        { text: 'Pricing', link: '/pricing' },
-        { text: 'Booking', link: '/booking' },
+        { text: 'About', link: '#about', icon: 'home' },
+        { text: 'Features', link: '#features', icon: 'list-ul' },
+        { text: 'Events', link: '#events', icon: 'calendar-alt' },
+        { text: 'Pricing', link: '#pricing', icon: 'dollar-sign' },
+        { text: 'Testimonials', link: '#testimonials', icon: 'users' },
+        { text: 'Booking', link: '#booking', icon: 'book' },
       ],
     }
   },

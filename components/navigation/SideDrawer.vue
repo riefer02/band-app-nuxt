@@ -1,7 +1,7 @@
 <template>
   <div class="">
     <nav
-      class="shadow-inner shadow-lg flex items-center justify-start fixed top-0 left-0 md:h-1/10 w-full transition-colors duration-400 ease-in"
+      class="shadow-inner shadow-lg flex items-center justify-between fixed top-0 left-0 md:h-1/10 w-full transition-colors duration-400 ease-in"
       :class="[
         { 'bg-white': scrollPosition >= 539 },
         { 'nav-yellow-bg': scrollPosition <= 540 || scrollPosition === 0 },
@@ -12,6 +12,7 @@
         @click="toggleNav()"
         >&#9776;</span
       >
+      <SunIcon class="ml-8 mr-12" />
     </nav>
 
     <!-- this would work as the backdrop when navbar is open-->
@@ -32,7 +33,7 @@
       >
         <a
           href="javascript:void(0)"
-          class="closebtn font-bold text-5xl pr-4"
+          class="closebtn font-bold text-5xl pr-4 hover:text-white"
           @click="toggleNav()"
           >&times;</a
         >
@@ -44,9 +45,12 @@
 
 <script>
 import NavList from '@/components/navigation/NavList.vue'
+import SunIcon from '@/components/icons/SunIcon.vue'
+
 export default {
   components: {
     NavList,
+    SunIcon,
   },
   data() {
     return {
@@ -65,6 +69,7 @@ export default {
       this.isOpen = !this.isOpen
     },
     updateScrollPosition() {
+      console.log(this.scrollPosition)
       this.scrollPosition = window.scrollY
     },
   },
@@ -77,22 +82,22 @@ nav {
 }
 
 .nav-yellow-bg {
-  background: rgb(255, 224, 95);
+  background: rgb(242, 217, 128);
   background: linear-gradient(
     90deg,
-    rgba(255, 224, 95, 1) 0%,
-    rgba(255, 254, 144, 1) 50%,
-    rgba(255, 221, 93, 1) 100%
+    rgba(242, 217, 128, 1) 0%,
+    rgba(254, 250, 212, 1) 50%,
+    rgba(242, 217, 128, 1) 100%
   );
 }
 
 .backdrop-container {
-  background: rgb(255, 224, 95);
+  background: rgb(242, 217, 128);
   background: linear-gradient(
     90deg,
-    rgba(255, 224, 95, 0.5) 0%,
-    rgba(255, 254, 144, 0.5) 50%,
-    rgba(255, 221, 93, 0.5) 100%
+    rgba(242, 217, 128, 0.5) 0%,
+    rgba(254, 250, 212, 0.5) 50%,
+    rgba(242, 217, 128, 0.5) 100%
   );
   z-index: 2;
   animation: fadeIn 0.6s cubic-bezier(0.1, 0.95, 0.77, 1.01);
@@ -105,7 +110,7 @@ nav {
 }
 
 .sidenav-container .closebtn {
-  color: rgba(255, 221, 93, 1);
+  color: rgb(242, 217, 128);
 }
 
 .open-drawer {

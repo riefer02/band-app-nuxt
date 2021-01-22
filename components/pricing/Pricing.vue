@@ -1,6 +1,5 @@
 <template>
-  <div class="my-8 px-4">
-    <!-- <div class="block"><SectionHeaderText text="Pricing" /></div> -->
+  <div id="pricing" class="my-8 px-4">
     <div class="flex flex-col md:flex-row">
       <div class="max-w-full md:max-w-6xl mx-auto my-3 md:px-8">
         <div class="relative block flex flex-col md:flex-row items-center">
@@ -87,7 +86,7 @@
               </div>
               <div class="block flex items-center p-8 uppercase">
                 <button
-                  class="mt-3 text-lg font-semibold bg-black w-full text-white rounded-lg px-6 py-3 block shadow-xl hover:bg-gray-700"
+                  class="mt-3 text-lg font-semibold bg-indigo-600 hover:bg-red-500 w-full text-white rounded-lg px-6 py-3 block shadow-xl"
                 >
                   Select
                 </button>
@@ -95,7 +94,7 @@
             </div>
           </div>
           <div
-            class="w-full max-w-md md:w-2/3 lg:w-1/3 sm:my-5 my-8 relative z-1 bg-white rounded-lg shadow-lg"
+            class="w-full max-w-md md:w-2/3 lg:w-1/3 sm:my-5 my-8 relative z-5 bg-white rounded-lg shadow-lg"
           >
             <div
               class="text-sm leading-none rounded-t-lg bg-gray-200 text-black font-semibold uppercase py-4 text-center tracking-wide"
@@ -181,7 +180,7 @@
 
             <div class="block flex items-center p-8 uppercase">
               <button
-                class="mt-3 text-lg font-semibold bg-black w-full text-white rounded-lg px-6 py-3 block shadow-xl hover:bg-gray-700"
+                class="mt-3 text-lg font-semibold bg-indigo-600 hover:bg-red-500 w-full text-white rounded-lg px-6 py-3 block shadow-xl"
               >
                 Select
               </button>
@@ -270,7 +269,7 @@
 
               <div class="block flex items-center p-8 uppercase">
                 <button
-                  class="mt-3 text-lg font-semibold bg-black w-full text-white rounded-lg px-6 py-3 block shadow-xl hover:bg-gray-700"
+                  class="mt-3 text-lg font-semibold bg-indigo-600 hover:bg-red-500 w-full text-white rounded-lg px-6 py-3 block shadow-xl"
                 >
                   Select
                 </button>
