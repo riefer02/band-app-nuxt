@@ -69,7 +69,6 @@ export default {
       this.isOpen = !this.isOpen
     },
     updateScrollPosition() {
-      console.log(this.scrollPosition)
       this.scrollPosition = window.scrollY
     },
   },

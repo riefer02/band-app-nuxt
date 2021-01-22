@@ -86,6 +86,7 @@ export default {
           console.log('Success', res.status, res.text)
           this.resetForm()
           this.messageSent = !this.messageSent
+          location.href = '#booking'
         },
         (err) => {
           console.log('Failed...', err)
