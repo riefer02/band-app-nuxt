@@ -2,7 +2,7 @@
   <div class="lg:w-3/4 xl:w-1/2 mt-6 md:mt-0 rounded-lg m-2 md:m-0 p-2">
     <div class="testimonial sm:flex bg-white rounded-lg shadow-lg px-3 sm:p-0">
       <div
-        class="flex justify-center align-center md:block w-32 sm:w-1/3 h-32 sm:h-auto sm:rounded-none rounded-full mx-auto md:mr-0 flex-shrink-0"
+        class="flex justify-center align-center md:block w-32 sm:w-1/3 h-32 p-4 sm:p-0 sm:h-auto sm:rounded-none rounded-full mx-auto md:mr-0 flex-shrink-0"
       >
         <img
           src="https://unsplash.it/804/800"
