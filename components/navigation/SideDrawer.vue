@@ -4,7 +4,7 @@
       class="shadow-inner shadow-lg flex items-center justify-between fixed top-0 left-0 md:h-1/10 w-full transition-colors duration-400 ease-in"
       :class="[
         { 'bg-white': scrollPosition >= 539 },
-        { 'nav-yellow-bg': scrollPosition <= 540 || scrollPosition === 0 },
+        { 'linear-gradient': scrollPosition <= 540 || scrollPosition === 0 },
       ]"
     >
       <span
@@ -12,7 +12,8 @@
         @click="toggleNav()"
         >&#9776;</span
       >
-      <SunIcon class="ml-8 mr-12" />
+      <h3 class="text-2xl">The Lewd Dudes</h3>
+      <BandSvg class="ml-8 mr-12" />
     </nav>
 
     <!-- this would work as the backdrop when navbar is open-->
@@ -45,12 +46,12 @@
 
 <script>
 import NavList from '@/components/navigation/NavList.vue'
-import SunIcon from '@/components/icons/SunIcon.vue'
+import BandSvg from '@/components/icons/BandSvg.vue'
 
 export default {
   components: {
     NavList,
-    SunIcon,
+    BandSvg,
   },
   data() {
     return {
@@ -80,23 +81,13 @@ nav {
   z-index: 2;
 }
 
-.nav-yellow-bg {
-  background: rgb(242, 217, 128);
-  background: linear-gradient(
-    90deg,
-    rgba(242, 217, 128, 1) 0%,
-    rgba(254, 250, 212, 1) 50%,
-    rgba(242, 217, 128, 1) 100%
-  );
-}
-
 .backdrop-container {
-  background: rgb(242, 217, 128);
+  background: rgb(213, 184, 255);
   background: linear-gradient(
     90deg,
-    rgba(242, 217, 128, 0.5) 0%,
-    rgba(254, 250, 212, 0.5) 50%,
-    rgba(242, 217, 128, 0.5) 100%
+    rgba(213, 184, 255, 0.5) 0%,
+    rgba(220, 198, 224, 0.5) 50%,
+    rgba(213, 184, 255, 0.5) 100%
   );
   z-index: 2;
   animation: fadeIn 0.6s cubic-bezier(0.1, 0.95, 0.77, 1.01);
@@ -129,7 +120,25 @@ nav {
   opacity: 0;
 }
 
+@media screen and (min-width: 400px) {
+  .open-drawer {
+    @apply w-2/3;
+  }
+}
+
 @media screen and (min-width: 768px) {
+  .open-drawer {
+    @apply w-5/12;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .open-drawer {
+    @apply w-1/4;
+  }
+}
+
+@media screen and (min-width: 1400px) {
   .open-drawer {
     @apply w-2/12;
   }

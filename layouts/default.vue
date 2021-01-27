@@ -1,8 +1,39 @@
 <template>
-  <div>
-    <Nuxt />
+  <div
+    v-if="isLoading"
+    class="bg-opacity-25 h-screen flex justify-center items-center linear-gradient"
+  >
+    <Loader />
+  </div>
+  <div v-else>
+    <div class="linear-gradient">
+      <div class="w-full overflow-hidden">
+        <SideDrawer />
+      </div>
+      <Nuxt />
+      <div class="w-full overflow-hidden">
+        <Footer />
+      </div>
+    </div>
   </div>
 </template>
+
+<script>
+import SideDrawer from '../components/navigation/SideDrawer'
+import Footer from '../components/footer/Footer.vue'
+
+export default {
+  components: {
+    SideDrawer,
+    Footer,
+  },
+  computed: {
+    isLoading() {
+      return this.$store.state.isLoading
+    },
+  },
+}
+</script>
 
 <style>
 html {

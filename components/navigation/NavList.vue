@@ -16,12 +16,8 @@ export default {
   data() {
     return {
       links: [
-        { text: 'About', link: '#about', icon: 'home' },
-        { text: 'Features', link: '#features', icon: 'list-ul' },
-        { text: 'Events', link: '#events', icon: 'calendar-alt' },
-        { text: 'Pricing', link: '#pricing', icon: 'dollar-sign' },
-        { text: 'Testimonials', link: '#testimonials', icon: 'users' },
-        { text: 'Booking', link: '#booking', icon: 'book' },
+        { text: 'Home', link: '/', icon: 'home' },
+        { text: 'Store', link: '/store', icon: 'list-ul' },
       ],
     }
   },

@@ -1,0 +1,40 @@
+html {
+  scroll-behavior: smooth;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Lobster', cursive;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.linear-gradient {
+  background: rgb(213, 184, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(213, 184, 255, 1) 0%,
+    rgba(220, 198, 224, 1) 50%,
+    rgba(213, 184, 255, 1) 100%
+  );
+}
+
+.linear-gradient-text {
+  background: rgb(213, 184, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(213, 184, 255, 1) 0%,
+    rgba(220, 198, 224, 1) 50%,
+    rgba(213, 184, 255, 1) 100%
+  );
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}

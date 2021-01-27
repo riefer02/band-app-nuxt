@@ -5,10 +5,11 @@
     >
       <div class="w-full md:w-2/3 md:order-2 p-10 xl:p-16">
         <div class="">
-          <SectionHeaderText text="Welcome to Casa Patron" />
+          <SectionHeaderText text="Your Favorite Band Period" />
         </div>
         <div class="">
-          <ParagraphText :text="placeholderText" />
+          <ParagraphText :text="placeholderTextOne" />
+          <ParagraphText :text="placeholderTextTwo" />
         </div>
         <div class="flex justify-center px-2 py-2">
           <Button text="Learn More" link="features" />
@@ -34,8 +35,10 @@ export default {
   },
   data() {
     return {
-      placeholderText:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      placeholderTextOne:
+        'Your eyes are barely open, that was some rager of a party. You roll over, whoever you met last night is gone. The evening comes back in flashes: how many drinks did you end up downing, had you crowd surfed, and who was that band? The answer is stained on your hand in fat sharpie letters: "My favorite band in Austin".',
+      placeholderTextTwo:
+        "The Lewd Dudes are a 5 man rock n roll party from Austin, Texas and are a crowd-pleasing regular on stages across the Lone Star State. When they play it's hard to find an audience member without a smile on their face and a beer in their hand. In the wild party-like atmosphere of their shows, it might be easy to miss the punk rock Springsteen and Zappa blend of music and clever lyrics but they pull it off so well it can't be ignored. Now on their first full length and second release, the Lewd Dudes are broadening their musical horizons and dimming the lights, it's getting serious, but also funny, but also serious.",
     }
   },
 }

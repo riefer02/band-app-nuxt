@@ -1,12 +1,12 @@
 <template>
   <div class="flex justify-start items-center">
     <font-awesome-icon :icon="['fa', link.icon]" class="mr-3 text-3xl fa-fw" />
-    <a
+    <NuxtLink
       :id="link.text + '-link'"
       class="block text-3xl mx-0 my-2 no-underline hover:text-white"
-      :href="link.link"
+      :to="link.link"
       @click="$emit('toggle-nav')"
-      >{{ link.text }}</a
+      >{{ link.text }}</NuxtLink
     >
   </div>
 </template>
@@ -27,7 +27,7 @@ export default {
 <style scoped>
 a {
   font-family: 'Lobster', cursive;
-  color: rgb(242, 217, 128);
+  color: rgb(255, 255, 255);
   transition: all 0.3s;
 }
 </style>
