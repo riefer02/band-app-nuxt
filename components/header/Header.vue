@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <client-only>
     <VideoHeader :header-data="headerData"> </VideoHeader>
-  </div>
+  </client-only>
 </template>
 
 <script>

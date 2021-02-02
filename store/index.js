@@ -1,9 +1,9 @@
 export const state = () => ({
-  isLoading: false,
+  isLoading: true,
 })
 
 export const mutations = {
   SET_LOAD_STATE(state, newState) {
-    state.isLoading = newState
+    return (state.isLoading = newState)
   },
 }

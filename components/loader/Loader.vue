@@ -1,9 +1,20 @@
 <template>
-  <div class="spinner"></div>
+  <div>
+    <div class="spinner"></div>
+    <h3 class="text-2xl">Loading Lewdness...</h3>
+  </div>
 </template>
 
 <script>
-export default {}
+export default {
+  mounted() {
+    this.$nextTick(() => {
+      setTimeout(() => {
+        this.$store.commit('SET_LOAD_STATE', false)
+      }, 2000)
+    })
+  },
+}
 </script>
 
 <style scoped>
