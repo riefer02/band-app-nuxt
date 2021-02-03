@@ -1,19 +1,22 @@
 <template>
   <div class="">
     <nav
-      class="shadow-inner shadow-lg flex items-center justify-between fixed top-0 left-0 md:h-1/10 w-full transition-colors duration-400 ease-in"
+      class="shadow-inner shadow-lg transition-all flex items-center justify-between fixed top-0 left-0 md:h-1/10 w-full duration-400 ease-in"
       :class="[
         { 'bg-white': scrollPosition >= 539 },
         { 'linear-gradient': scrollPosition <= 540 || scrollPosition === 0 },
       ]"
     >
       <span
-        class="mobile-nav-open-icon cursor-pointer text-3xl lg:text-3xl mr-8 ml-12 p-2 text-black"
+        class="mobile-nav-open-icon cursor-pointer text-3xl lg:text-3xl mr-4 sm:mr-10 lg:mr-12 ml-4 lg:ml-12 p-2 text-black"
         @click="toggleNav()"
         >&#9776;</span
       >
       <h3 class="text-2xl">The Lewd Dudes</h3>
-      <BandSvg class="ml-8 mr-12" />
+      <div class="flex justify-center items-center">
+        <CartIcon />
+        <BandSvg class="lg:ml-3 ml-2 mr-4 lg:mr-12" />
+      </div>
     </nav>
 
     <!-- this would work as the backdrop when navbar is open-->
@@ -30,8 +33,11 @@
       :class="[{ 'open-drawer': isOpen }, { 'close-drawer': !isOpen }]"
     >
       <span
-        class="drawer-close-button flex items-center justify-end h-12 mb-12 w-full"
+        class="drawer-close-button flex items-center justify-between h-12 mb-12 w-full"
       >
+        <div class="pl-5 pt-1">
+          <CartIcon />
+        </div>
         <a
           href="javascript:void(0)"
           class="closebtn font-bold text-5xl pr-4 hover:text-white"
@@ -47,11 +53,13 @@
 <script>
 import NavList from '@/components/navigation/NavList.vue'
 import BandSvg from '@/components/icons/BandSvg.vue'
+import CartIcon from '@/components/store/CartIcon.vue'
 
 export default {
   components: {
     NavList,
     BandSvg,
+    CartIcon,
   },
   data() {
     return {

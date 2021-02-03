@@ -4,7 +4,7 @@
       <Header :header-data="viewData.header" />
     </div>
     <div class="container mx-auto md:px-4 md:py-4">
-      <div id="about" class="w-full overflow-hidden">
+      <div id="store" class="w-full overflow-hidden">
         <ProductList :items="products" />
       </div>
     </div>

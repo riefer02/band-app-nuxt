@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="spinner"></div>
-    <h3 class="text-2xl">Loading Lewdness...</h3>
+    <h3 class="text-2xl">Lewding...</h3>
   </div>
 </template>
 
