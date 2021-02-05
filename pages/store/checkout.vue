@@ -4,17 +4,19 @@
       class="container mx-auto md:px-4 md:py-4 bg-gray-100 h-screen mt-16 mb-12 rounded-lg shadow-lg"
     >
       <div id="checkout" class="w-full overflow-hidden p-2">
-        <div class="flex justify-center">
-          <h2 class="mx-auto text-2xl">Your Shopping Cart</h2>
-        </div>
-        <div>Your Cart is empty.</div>
+        <CheckoutForm />
       </div>
     </div>
   </div>
 </template>
 
 <script>
-export default {}
+import CheckoutForm from '../../components/store/CheckoutForm'
+export default {
+  components: {
+    CheckoutForm,
+  },
+}
 </script>
 
 <style lang="scss" scoped></style>

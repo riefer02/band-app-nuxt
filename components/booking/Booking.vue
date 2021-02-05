@@ -76,6 +76,7 @@ export default {
         email: '',
         message: '',
       },
+      error: '',
     }
   },
   methods: {
@@ -83,13 +84,14 @@ export default {
       init('user_1zmjJujyWGdukFUZ9Mrfn')
       emailjs.send('service_u6s87ud', 'template_uviispy', this.formData).then(
         (res) => {
-          console.log('Success', res.status, res.text)
+          // console.log('Success', res.status, res.text)
           this.resetForm()
           this.messageSent = !this.messageSent
           location.href = '#booking'
         },
         (err) => {
-          console.log('Failed...', err)
+          // console.log('Failed...', err)
+          this.error = err
         }
       )
     },

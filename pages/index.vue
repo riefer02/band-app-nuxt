@@ -54,11 +54,6 @@ export default {
       },
     }
   },
-  mounted() {
-    this.$nextTick(function () {
-      this.$store.commit('SET_LOAD_STATE', false)
-    })
-  },
 }
 </script>
 
