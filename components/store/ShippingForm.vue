@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <span>Shipping Address</span>
+  <div class="p-3">
+    <h3 class="text-xl">Shipping Address</h3>
     <div class="grid md:grid-cols-2 md:gap-2">
       <input
         type="text"

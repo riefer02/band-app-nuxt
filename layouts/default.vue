@@ -10,7 +10,9 @@
       <div class="w-full overflow-hidden">
         <SideDrawer />
       </div>
-      <Nuxt />
+      <div class="mt-14">
+        <Nuxt />
+      </div>
       <div class="w-full overflow-hidden">
         <Footer />
       </div>

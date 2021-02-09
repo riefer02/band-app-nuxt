@@ -1,9 +1,6 @@
 <template>
   <div>
     <div>
-      <div class="flex justify-center">
-        <h2 class="mx-auto text-2xl">Your Shopping Cart</h2>
-      </div>
       <div v-if="productList.length > 0">
         <ul v-for="product in productList" :key="product.id" class="">
           <CartItem :item="product" />
