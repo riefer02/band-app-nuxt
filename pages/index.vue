@@ -7,7 +7,7 @@
       <div id="about" class="w-full overflow-hidden"><About /></div>
       <div id="features" class="w-full overflow-hidden"><Features /></div>
       <div id="events" class="w-full overflow-hidden"><EventsList /></div>
-      <div id="pricing" class="w-full overflow-hidden"><Pricing /></div>
+      <!-- <div id="pricing" class="w-full overflow-hidden"><Pricing /></div> -->
       <div id="testimonials" class="w-full overflow-hidden">
         <Testimonial />
       </div>
@@ -21,7 +21,7 @@ import Header from '@/components/header/Header.vue'
 import About from '@/components/about/About.vue'
 import Features from '@/components/features/Features.vue'
 import EventsList from '@/components/events/EventsList.vue'
-import Pricing from '@/components/pricing/Pricing.vue'
+// import Pricing from '@/components/pricing/Pricing.vue'
 import Testimonial from '@/components/testimonial/Testimonial.vue'
 import Booking from '@/components/booking/Booking.vue'
 
@@ -32,7 +32,7 @@ export default {
     About,
     Features,
     EventsList,
-    Pricing,
+    // Pricing,
     Testimonial,
     Booking,
   },

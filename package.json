@@ -14,9 +14,11 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.34",
     "@fortawesome/free-solid-svg-icons": "^5.15.2",
     "@nuxtjs/axios": "^5.12.2",
+    "@nuxtjs/firebase": "^7.4.1",
     "@nuxtjs/fontawesome": "^1.1.2",
     "core-js": "^3.6.5",
     "emailjs-com": "^2.6.4",
+    "firebase": "^8.2.6",
     "nuxt": "^2.14.6",
     "vue-responsive-video-background-player": "^1.2.1"
   },

@@ -61,6 +61,25 @@ export default {
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
+    [
+      '@nuxtjs/firebase',
+      {
+        config: {
+          apiKey: 'AIzaSyAbS9VzLNeBTJVEMbf0vMLVxCFZ6YtLgVA',
+          authDomain: 'tld-store-305b3.firebaseapp.com',
+          projectId: 'tld-store-305b3',
+          storageBucket: 'tld-store-305b3.appspot.com',
+          messagingSenderId: '834303046213',
+          appId: '1:834303046213:web:528bfe9b26c940c251a92c',
+          measurementId: 'G-R9JBWCBH9B',
+          databaseURL: 'https://tld-store-305b3.firebaseio.com',
+        },
+        services: {
+          firestore: true,
+          analytics: true,
+        },
+      },
+    ],
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
   ],
@@ -72,5 +91,13 @@ export default {
   build: {},
   router: {
     middleware: ['loading'],
+  },
+  firestore: {
+    memoryOnly: false, // default
+    chunkName: process.env.NODE_ENV !== 'production' ? 'firebase-auth' : '[id]', // default
+    enablePersistence: true,
+    settings: {
+      // Firestore Settings - currently only works in SPA mode
+    },
   },
 }

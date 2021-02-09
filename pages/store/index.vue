@@ -57,6 +57,10 @@ export default {
       ],
     }
   },
+  mounted() {
+    console.log(this.$store)
+    this.$store.dispatch('product/fetchProducts')
+  },
 }
 </script>
 
