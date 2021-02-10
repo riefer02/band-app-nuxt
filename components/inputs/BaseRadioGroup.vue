@@ -6,9 +6,8 @@
       class="text-sm flex m-1 flex-col"
       :label="option"
       :value="option"
-      :model-value="modelValue"
       :name="name"
-      @update:modelValue="$emit('update:modelValue', $event)"
+      @custom-event="passToParent"
     />
   </div>
 </template>
@@ -29,9 +28,10 @@ export default {
       require: true,
       default: '',
     },
-    modelValue: {
-      type: [String, Number],
-      required: true,
+  },
+  methods: {
+    passToParent(e) {
+      this.$emit('custom-event', e)
     },
   },
 }

@@ -3,10 +3,9 @@
     <input
       type="radio"
       class="mx-auto"
-      :checked="modelValue === value"
       :value="value"
       v-bind="$attrs"
-      @change="$emit('update:modelValue', value)"
+      @change="handleInput"
     />
     {{ label }}</label
   >
@@ -19,13 +18,15 @@ export default {
       type: String,
       default: '',
     },
-    modelValue: {
-      type: [String, Number],
-      default: '',
-    },
     value: {
       type: [String, Number],
       required: true,
+    },
+  },
+
+  methods: {
+    handleInput(e) {
+      this.$emit('custom-event', e.target.value)
     },
   },
 }

@@ -18,7 +18,11 @@
       </div>
       <div class="flex items-baseline mt-4 mb-6">
         <div class="space-x-2 flex">
-          <BaseRadioGroup v-model="size" name="size" :options="item.sizes" />
+          <BaseRadioGroup
+            name="size"
+            :options="item.sizes"
+            @custom-event="handleRadioInput"
+          />
         </div>
         <div class="ml-auto text-sm text-gray-500 underline">Size Guide</div>
       </div>
@@ -79,6 +83,11 @@ export default {
   computed: {
     image() {
       return this.item.images[0]
+    },
+  },
+  methods: {
+    handleRadioInput(e) {
+      this.size = e
     },
   },
 }
