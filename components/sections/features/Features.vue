@@ -21,7 +21,7 @@
 
 <script>
 import SectionHeaderText from '@/components/typography/SectionHeaderText.vue'
-import FeaturesList from '@/components/features/FeaturesList.vue'
+import FeaturesList from '@/components/sections/features/FeaturesList.vue'
 export default {
   components: {
     SectionHeaderText,

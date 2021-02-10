@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import CheckoutForm from '../../components/store/CheckoutForm'
+import CheckoutForm from '@/components/ecommerce/CheckoutForm'
 export default {
   components: {
     CheckoutForm,

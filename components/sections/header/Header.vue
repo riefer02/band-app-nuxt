@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import VideoHeader from '@/components/header/VideoHeader.vue'
+import VideoHeader from '@/components/sections/header/VideoHeader.vue'
 export default {
   components: {
     VideoHeader,

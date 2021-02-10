@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import TestimonialItem from '@/components/testimonial/TestimonialItem.vue'
+import TestimonialItem from '@/components/sections/testimonial/TestimonialItem.vue'
 export default {
   components: {
     TestimonialItem,

@@ -1,7 +1,7 @@
 <template>
   <div class="">
     <nav
-      class="shadow-inner shadow-lg transition-all flex items-center justify-between fixed top-0 left-0 md:h-1/10 w-full duration-400 ease-in"
+      class="shadow-lg transition-all flex items-center justify-between fixed top-0 left-0 md:h-1/10 w-full duration-400 ease-in"
       :class="[
         { 'bg-white': scrollPosition >= 539 },
         { 'linear-gradient': scrollPosition <= 540 || scrollPosition === 0 },
@@ -12,7 +12,9 @@
         @click="toggleNav()"
         >&#9776;</span
       >
-      <h3 class="text-2xl">The Lewd Dudes</h3>
+      <h3 class="text-2xl cursor-pointer" @click="$router.push('/')">
+        The Lewd Dudes
+      </h3>
       <div class="flex justify-center items-center">
         <CartIcon />
         <BandSvg class="lg:ml-3 ml-2 mr-4 lg:mr-12" />
@@ -29,7 +31,7 @@
     <!--the would be the drawer and it's content-->
     <div
       id="mySidenav"
-      class="sidenav-container transition-all bg-white flex flex-col items-center h-full overflow-x-hidden pt-2 fixed top-0 left-0 w-0 shadow-inner shadow-lg"
+      class="sidenav-container transition-all bg-white flex flex-col items-center h-full overflow-x-hidden pt-2 fixed top-0 left-0 w-0 shadow-lg"
       :class="[{ 'open-drawer': isOpen }, { 'close-drawer': !isOpen }]"
     >
       <span
@@ -53,7 +55,7 @@
 <script>
 import NavList from '@/components/navigation/NavList.vue'
 import BandSvg from '@/components/icons/BandSvg.vue'
-import CartIcon from '@/components/store/CartIcon.vue'
+import CartIcon from '@/components/ecommerce/CartIcon.vue'
 
 export default {
   components: {

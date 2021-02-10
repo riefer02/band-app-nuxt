@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import FeaturesItem from '@/components/features/FeaturesItem.vue'
+import FeaturesItem from '@/components/sections/features/FeaturesItem.vue'
 export default {
   components: {
     FeaturesItem,

@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import TestimonialList from '@/components/testimonial/TestimonialList.vue'
+import TestimonialList from '@/components/sections/testimonial/TestimonialList.vue'
 export default {
   components: {
     TestimonialList,

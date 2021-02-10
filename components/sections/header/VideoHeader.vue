@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import TextHeader from '@/components/header/TextHeader.vue'
+import TextHeader from '@/components/sections/header/TextHeader.vue'
 
 export default {
   name: 'VideoHeader',

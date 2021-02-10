@@ -2,7 +2,7 @@
   <div class="flex flex-col sm:flex-row shadow-lg rounded-lg w-full bg-white">
     <div class="flex-none w-full h-48 sm:h-auto sm:w-48 relative">
       <img
-        src="https://unsplash.it/804/800"
+        :src="require(`~/assets/images/${image}`)"
         class="absolute inset-0 w-full h-full object-cover rounded-t-lg sm:rounded-l-lg sm:rounded-r-none"
       />
     </div>
@@ -18,52 +18,7 @@
       </div>
       <div class="flex items-baseline mt-4 mb-6">
         <div class="space-x-2 flex">
-          <label>
-            <input
-              class="w-9 h-9 flex items-center justify-center bg-gray-100 rounded-lg"
-              name="size"
-              type="radio"
-              value="xs"
-              checked
-            />
-            XS
-          </label>
-          <label>
-            <input
-              class="w-9 h-9 flex items-center justify-center"
-              name="size"
-              type="radio"
-              value="s"
-            />
-            S
-          </label>
-          <label>
-            <input
-              class="w-9 h-9 flex items-center justify-center"
-              name="size"
-              type="radio"
-              value="m"
-            />
-            M
-          </label>
-          <label>
-            <input
-              class="w-9 h-9 flex items-center justify-center"
-              name="size"
-              type="radio"
-              value="l"
-            />
-            L
-          </label>
-          <label>
-            <input
-              class="w-9 h-9 flex items-center justify-center"
-              name="size"
-              type="radio"
-              value="xl"
-            />
-            XL
-          </label>
+          <BaseRadioGroup v-model="size" name="size" :options="item.sizes" />
         </div>
         <div class="ml-auto text-sm text-gray-500 underline">Size Guide</div>
       </div>
@@ -104,11 +59,26 @@
 </template>
 
 <script>
+import BaseRadioGroup from '@/components/inputs/BaseRadioGroup.vue'
 export default {
+  components: {
+    BaseRadioGroup,
+  },
   props: {
     item: {
       type: Object,
       default: () => {},
+    },
+  },
+  data() {
+    return {
+      size: '',
+    }
+  },
+
+  computed: {
+    image() {
+      return this.item.images[0]
     },
   },
 }

@@ -7,7 +7,6 @@
       <div id="about" class="w-full overflow-hidden"><About /></div>
       <div id="features" class="w-full overflow-hidden"><Features /></div>
       <div id="events" class="w-full overflow-hidden"><EventsList /></div>
-      <!-- <div id="pricing" class="w-full overflow-hidden"><Pricing /></div> -->
       <div id="testimonials" class="w-full overflow-hidden">
         <Testimonial />
       </div>
@@ -17,13 +16,12 @@
 </template>
 
 <script>
-import Header from '@/components/header/Header.vue'
-import About from '@/components/about/About.vue'
-import Features from '@/components/features/Features.vue'
-import EventsList from '@/components/events/EventsList.vue'
-// import Pricing from '@/components/pricing/Pricing.vue'
-import Testimonial from '@/components/testimonial/Testimonial.vue'
-import Booking from '@/components/booking/Booking.vue'
+import Header from '@/components/sections/header/Header.vue'
+import About from '@/components/sections/about/About.vue'
+import Features from '@/components/sections/features/Features.vue'
+import EventsList from '@/components/sections/events/EventsList.vue'
+import Testimonial from '@/components/sections/testimonial/Testimonial.vue'
+import Booking from '@/components/sections/booking/Booking.vue'
 
 export default {
   name: 'Home',
@@ -32,7 +30,6 @@ export default {
     About,
     Features,
     EventsList,
-    // Pricing,
     Testimonial,
     Booking,
   },
@@ -44,7 +41,7 @@ export default {
           headerVideo: 'uncharted-1.mp4',
           headerText: {
             primaryText: 'The Lewd Dudes',
-            secondaryText: '"Lewd, just like the doctor ordered."',
+            secondaryText: '"Just like the doctor ordered."',
             button: {
               text: 'Learn More',
               link: 'about',

@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import ProductCard from '@/components/store/ProductCard.vue'
+import ProductCard from '@/components/ecommerce/ProductCard.vue'
 export default {
   components: {
     ProductCard,

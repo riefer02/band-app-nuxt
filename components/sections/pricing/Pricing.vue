@@ -2,12 +2,12 @@
   <div class="my-8 px-4">
     <div class="flex flex-col md:flex-row">
       <div class="max-w-full md:max-w-6xl mx-auto my-3 md:px-8">
-        <div class="relative block flex flex-col md:flex-row items-center">
+        <div class="relative flex flex-col md:flex-row items-center">
           <div
             class="w-11/12 max-w-sm md:w-3/5 lg:w-1/3 sm:my-5 my-8 relative z-0 rounded-lg shadow-lg md:-mr-4"
           >
             <div
-              class="bg-white text-black rounded-lg shadow-inner shadow-lg overflow-hidden"
+              class="bg-white text-black rounded-lg shadow-lg overflow-hidden"
             >
               <div
                 class="block text-left text-sm sm:text-md max-w-sm mx-auto mt-2 text-black px-8 lg:px-6"
@@ -84,7 +84,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="block flex items-center p-8 uppercase">
+              <div class="flex items-center p-8 uppercase">
                 <button
                   class="mt-3 text-lg font-semibold bg-indigo-600 hover:bg-red-500 w-full text-white rounded-lg px-6 py-3 block shadow-xl"
                 >
@@ -178,7 +178,7 @@
               </ul>
             </div>
 
-            <div class="block flex items-center p-8 uppercase">
+            <div class="flex items-center p-8 uppercase">
               <button
                 class="mt-3 text-lg font-semibold bg-indigo-600 hover:bg-red-500 w-full text-white rounded-lg px-6 py-3 block shadow-xl"
               >
@@ -190,7 +190,7 @@
             class="w-11/12 max-w-sm md:w-3/5 lg:w-1/3 sm:my-5 my-8 relative z-0 rounded-lg shadow-lg md:-ml-4"
           >
             <div
-              class="bg-white text-black rounded-lg shadow-inner shadow-lg overflow-hidden"
+              class="bg-white text-black rounded-lg shadow-lg overflow-hidden"
             >
               <div
                 class="block text-left text-sm sm:text-md max-w-sm mx-auto mt-2 text-black px-8 lg:px-6"
@@ -267,7 +267,7 @@
                 </ul>
               </div>
 
-              <div class="block flex items-center p-8 uppercase">
+              <div class="flex items-center p-8 uppercase">
                 <button
                   class="mt-3 text-lg font-semibold bg-indigo-600 hover:bg-red-500 w-full text-white rounded-lg px-6 py-3 block shadow-xl"
                 >
@@ -283,12 +283,7 @@
 </template>
 
 <script>
-// import SectionHeaderText from '@/components/typography/SectionHeaderText.vue'
-export default {
-  components: {
-    // SectionHeaderText,
-  },
-}
+export default {}
 </script>
 
 <style lang="scss" scoped></style>

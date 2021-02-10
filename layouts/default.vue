@@ -22,7 +22,7 @@
 
 <script>
 import SideDrawer from '../components/navigation/SideDrawer'
-import Footer from '../components/footer/Footer.vue'
+import Footer from '../components/sections/footer/Footer.vue'
 
 export default {
   components: {

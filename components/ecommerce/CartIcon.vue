@@ -1,5 +1,8 @@
 <template>
-  <div class="flex justify-center items-center relative">
+  <div
+    class="flex justify-center items-center relative cursor-pointer"
+    @click="$router.push('/store/checkout')"
+  >
     <font-awesome-icon
       :icon="['fa', 'shopping-cart']"
       class="mr-3 text-3xl fa-fw mt-2"
