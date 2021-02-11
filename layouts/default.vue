@@ -29,6 +29,7 @@ export default {
     SideDrawer,
     Footer,
   },
+
   computed: {
     isLoading() {
       return this.$store.state.isLoading

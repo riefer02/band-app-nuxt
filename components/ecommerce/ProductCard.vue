@@ -13,7 +13,7 @@
           {{ '$' + item.price + '.00' }}
         </div>
         <div class="w-full flex-none text-sm font-medium text-gray-500 mt-2">
-          In stock
+          {{ quantity }}
         </div>
       </div>
       <div class="flex items-baseline mt-4 mb-6">
@@ -38,7 +38,7 @@
             class="w-1/2 flex items-center justify-center rounded-md border border-gray-300"
             type="button"
           >
-            Add to bag
+            Details
           </button>
         </div>
         <button
@@ -46,17 +46,11 @@
           type="button"
           aria-label="like"
         >
-          <svg width="20" height="20" fill="currentColor">
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
-            />
-          </svg>
+          <HeartIcon />
         </button>
       </div>
       <p class="text-sm text-gray-500">
-        Free shipping on all continental US orders.
+        {{ item.description }}
       </p>
     </form>
   </div>
@@ -64,9 +58,12 @@
 
 <script>
 import BaseRadioGroup from '@/components/inputs/BaseRadioGroup.vue'
+import HeartIcon from '@/components/icons/HeartIcon.vue'
+
 export default {
   components: {
     BaseRadioGroup,
+    HeartIcon,
   },
   props: {
     item: {
@@ -76,13 +73,27 @@ export default {
   },
   data() {
     return {
-      size: '',
+      size: undefined,
     }
   },
 
   computed: {
     image() {
       return this.item.images[0]
+    },
+    quantity() {
+      let quantity
+      if (this.size) {
+        const index = this.item.sizes.indexOf(this.size)
+        if (this.item.quantity[index] === 0) {
+          quantity = 'Out of Stock'
+        } else {
+          quantity = `${this.item.quantity[index]} in Stock`
+        }
+      } else {
+        quantity = 'Select a Size'
+      }
+      return quantity
     },
   },
   methods: {
