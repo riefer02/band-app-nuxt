@@ -9,7 +9,7 @@
     />
     <span
       class="h-auto w-auto rounded-full px-2 bg-white text-sm absolute top-0 right-0 z-2"
-      >0</span
+      >{{ this.$store.state.product.cartTotal }}</span
     >
   </div>
 </template>

@@ -2,13 +2,14 @@
   <ul class="">
     <div class="divide-y divide-gray-100">
       <li v-for="link in links" :key="link.text">
-        <NavItem :link="link" @toggle-nav="$emit('toggle-nav')" />
+        <NavItem :link="link" @click="TOGGLE_NAV_DRAWER" />
       </li>
     </div>
   </ul>
 </template>
 
 <script>
+import { mapMutations } from 'vuex'
 import NavItem from '@/components/navigation/NavItem.vue'
 
 export default {
@@ -27,6 +28,9 @@ export default {
         { text: 'About', link: '/about', icon: 'users' },
       ],
     }
+  },
+  methods: {
+    ...mapMutations(['TOGGLE_NAV_DRAWER']),
   },
 }
 </script>

@@ -5,13 +5,14 @@
       :id="link.text + '-link'"
       class="block text-3xl mx-0 my-2 no-underline hover:text-white"
       :to="link.link"
-      @click="$emit('toggle-nav')"
+      @click="TOGGLE_NAV_DRAWER"
       >{{ link.text }}</NuxtLink
     >
   </div>
 </template>
 
 <script>
+import { mapMutations } from 'vuex'
 export default {
   props: {
     link: {
@@ -20,6 +21,9 @@ export default {
         return {}
       },
     },
+  },
+  methods: {
+    ...mapMutations(['TOGGLE_NAV_DRAWER']),
   },
 }
 </script>
