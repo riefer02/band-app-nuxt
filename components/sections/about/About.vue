@@ -3,7 +3,7 @@
     <div
       class="flex flex-col lg:flex-row bg-white text-black rounded-lg shadow-lg"
     >
-      <div class="w-full lg:w-2/3 lg:order-2 p-10 xl:p-16">
+      <div class="w-full lg:w-2/3 lg:order-2 p-4 xl:p-16">
         <div class="">
           <SectionHeaderText text="Your Favorite Band Period" />
         </div>
@@ -17,7 +17,7 @@
       </div>
       <div
         class="w-full bg-cover h-64 lg:h-auto lg:min-h-full lg:w-1/3 order-1 rounded-b-lg rounded-t-none lg:rounded-l-lg lg:rounded-r-none flex-grow"
-        style="background-image: url('https://unsplash.it/804/800')"
+        :style="{ backgroundImage: 'url(' + image + ')' }"
       ></div>
     </div>
   </div>
@@ -35,6 +35,7 @@ export default {
   },
   data() {
     return {
+      image: require('@/assets/images/andrew-1.jpg'),
       placeholderTextOne:
         'Your eyes are barely open, that was some rager of a party. You roll over, whoever you met last night is gone. The evening comes back in flashes: how many drinks did you end up downing, had you crowd surfed, and who was that band? The answer is stained on your hand in fat sharpie letters: "My favorite band in Austin".',
       placeholderTextTwo:

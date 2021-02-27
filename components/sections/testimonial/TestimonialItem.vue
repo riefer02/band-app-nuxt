@@ -36,6 +36,12 @@ export default {
   components: {
     ParagraphText,
   },
+  props: {
+    testimonial: {
+      type: Object,
+      default: () => ({}),
+    },
+  },
 }
 </script>
 

@@ -40,3 +40,7 @@ input {
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
+
+.text-indent {
+  text-indent: 1rem;
+}

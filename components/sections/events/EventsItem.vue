@@ -3,7 +3,7 @@
     class="max-w-full xl:w-1/3 shadow-lg rounded overflow-hidden m-4 sm:flex xl:flex-col"
   >
     <div
-      class="xl:h-48 h-40 sm:h-auto sm:w-48 md:w-64 xl:w-full flex-none bg-cover bg-center rounded rounded-t sm:rounded sm:rounded-l sm:rounded-r-none md:rounded-r-none xl:rounded-b-none rounded-b-none text-center overflow-hidden shadow-lg"
+      class="xl:h-48 h-40 sm:h-auto sm:w-48 md:w-64 xl:w-full flex-none bg-cover bg-top rounded rounded-t sm:rounded sm:rounded-l sm:rounded-r-none md:rounded-r-none xl:rounded-b-none rounded-b-none text-center overflow-hidden shadow-lg"
       :style="{ backgroundImage: 'url(' + item.image + ')' }"
     ></div>
     <div

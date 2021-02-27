@@ -23,11 +23,13 @@
 <script>
 import NavSystem from '../components/navigation/NavSystem'
 import Footer from '../components/sections/footer/Footer.vue'
+import Loader from '../components/utils/Loader'
 
 export default {
   components: {
     NavSystem,
     Footer,
+    Loader,
   },
 
   computed: {

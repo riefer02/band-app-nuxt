@@ -15,6 +15,32 @@ export default {
   components: {
     TestimonialItem,
   },
+  data() {
+    return {
+      testimonials: [
+        {
+          image: require('@/assets/images/andie-fan-1.jpg'),
+          quote: 'The Lewd Dudes are my church!',
+          name: 'Andie',
+        },
+        {
+          image: require('@/assets/images/nicole-fan-2.jpg'),
+          quote: 'The Lewd Dudes are like a good cheese plate!',
+          name: 'Nicole',
+        },
+        {
+          image: require('@/assets/images/rochelle-fan-3.jpg'),
+          quote: "I'm in the other band that play...",
+          name: 'Rochelle',
+        },
+        {
+          image: require('@/assets/images/abby-fan-4.jpg'),
+          quote: 'I broke up with Riley shortly after this.',
+          name: 'Abby',
+        },
+      ],
+    }
+  },
 }
 </script>
 

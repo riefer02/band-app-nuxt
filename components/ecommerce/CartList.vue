@@ -14,7 +14,11 @@
 </template>
 
 <script>
+import CartItem from './CartItem.vue'
 export default {
+  components: {
+    CartItem,
+  },
   data() {
     return {
       productList: [

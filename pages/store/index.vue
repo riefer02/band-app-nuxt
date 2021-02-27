@@ -13,9 +13,11 @@
 
 <script>
 import ProductList from '@/components/ecommerce/ProductList.vue'
+import Header from '@/components/sections/header/Header.vue'
 export default {
   components: {
     ProductList,
+    Header,
   },
   data() {
     return {
