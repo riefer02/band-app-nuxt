@@ -38,20 +38,21 @@
         class="sm:flex sm:flex-wrap sm:-mx-4 mt-6 pt-6 sm:mt-12 sm:pt-12 border-t"
       >
         <div class="sm:w-full px-4 md:w-1/6">
-          <strong>FWR</strong>
+          <strong>Rief Productions &copy;</strong>
         </div>
         <div class="px-4 sm:w-1/2 md:w-1/4 mt-4 md:mt-0">
-          <h6 class="font-bold mb-2">Address</h6>
+          <h6 class="text-xl font-bold mb-2">Home Base</h6>
           <address class="not-italic mb-4 text-sm">
             420 69th St.<br />
-            Austin, TX 78745
+            Austin, TX 42069
           </address>
         </div>
         <div class="px-4 sm:w-1/2 md:w-1/4 mt-4 md:mt-0">
-          <h6 class="font-bold mb-2">Free Resources</h6>
+          <h6 class="text-xl font-bold mb-2">Want more?</h6>
           <p class="mb-4 text-sm">
-            Use our HTML blocks for <strong>FREE</strong>.<br />
-            <em>All are MIT License</em>
+            Join our growing community by subscribing to our
+            <strong>Newsletter</strong>.<br />
+            <em>Enter Your Email Here:</em>
           </p>
         </div>
         <div class="px-4 md:w-1/4 md:ml-auto mt-6 sm:mt-4 md:mt-0">
@@ -73,89 +74,89 @@ export default {
   data() {
     return {
       linksGroupOne: {
-        title: 'Features',
+        title: 'Videos',
         linksList: [
           {
-            text: 'Cool Stuff',
-            link: '#',
+            text: 'Door Girl',
+            link: 'https://youtu.be/_sxFFHf3S4A',
           },
           {
-            text: 'Random Feature',
-            link: '#',
+            text: 'Malbec',
+            link: 'https://youtu.be/R7wFCYvIEKk',
           },
           {
-            text: 'Team Feature',
-            link: '#',
+            text: 'Me and My Bone',
+            link: 'https://youtu.be/JI4mp5IYNKc',
           },
           {
-            text: 'Stuff for Developers',
-            link: '#',
+            text: 'Austin Uncharted',
+            link: 'https://youtu.be/-bkpw7aevDw',
           },
           {
-            text: 'Another One',
-            link: '#',
-          },
-          {
-            text: 'Last One',
-            link: '#',
+            text: 'Pay Him',
+            link: 'https://youtu.be/erDW9qG8Vrs',
           },
         ],
       },
       linksGroupTwo: {
-        title: 'Resources',
+        title: 'Albums',
         linksList: [
           {
-            text: 'Resource',
+            text: 'Habitable Zone',
             link: '#',
           },
           {
-            text: 'Resource Name',
+            text: 'Malbec',
             link: '#',
           },
           {
-            text: 'Another Resource',
+            text: 'Self-Titled',
             link: '#',
           },
           {
-            text: 'Final Resource',
+            text: 'Easter Egg',
             link: '#',
           },
         ],
       },
       linksGroupThree: {
-        title: 'About',
+        title: 'Bios',
         linksList: [
           {
-            text: 'Team',
+            text: 'Andrew',
             link: '#',
           },
           {
-            text: 'Locations',
+            text: 'Riley',
             link: '#',
           },
           {
-            text: 'Privacy',
+            text: 'Rankin',
             link: '#',
           },
           {
-            text: 'Terms',
+            text: 'Jordan',
+            link: '#',
+          },
+          {
+            text: 'Scott',
             link: '#',
           },
         ],
       },
       linksGroupFour: {
-        title: 'Help',
+        title: 'Store',
         linksList: [
           {
-            text: 'Support',
+            text: 'Vinyl',
             link: '#',
           },
           {
-            text: 'Help Center',
+            text: 'Clothing',
             link: '#',
           },
           {
-            text: 'Contact Us',
+            text: 'Accessories',
             link: '#',
           },
         ],

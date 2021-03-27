@@ -1,10 +1,13 @@
 <template>
-  <video-background
-    :src="require(`@/assets/video/${videoSrc}`)"
-    style="height: 600px"
-  >
-    <TextHeader :texts="texts" />
-  </video-background>
+  <div class="video__wrapper">
+    <video-background
+      :src="require(`@/assets/video/${videoSrc}`)"
+      style="height: 600px"
+      class=""
+    >
+      <TextHeader :texts="texts" />
+    </video-background>
+  </div>
 </template>
 
 <script>
@@ -34,4 +37,4 @@ export default {
 }
 </script>
 
-<style></style>
+<style lang="scss"></style>

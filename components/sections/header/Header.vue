@@ -1,7 +1,9 @@
 <template>
-  <client-only>
-    <VideoHeader :header-data="headerData"> </VideoHeader>
-  </client-only>
+  <div class="header">
+    <client-only>
+      <VideoHeader :header-data="headerData"> </VideoHeader>
+    </client-only>
+  </div>
 </template>
 
 <script>
@@ -21,4 +23,9 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.header {
+  margin-top: 3.75rem;
+  min-height: 600px;
+}
+</style>

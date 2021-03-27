@@ -1,10 +1,8 @@
 <template>
-  <ul class="">
-    <div class="divide-y divide-gray-100">
-      <li v-for="link in links" :key="link.text">
-        <NavItem :link="link" @click="TOGGLE_NAV_DRAWER" />
-      </li>
-    </div>
+  <ul class="nav__list">
+    <li v-for="link in links" :key="link.text">
+      <NavItem :link="link" @click="TOGGLE_NAV_DRAWER" />
+    </li>
   </ul>
 </template>
 
@@ -35,4 +33,10 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.nav {
+  &__list {
+    width: 90%;
+  }
+}
+</style>

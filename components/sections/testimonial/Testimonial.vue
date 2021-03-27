@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col md:flex-row px-4 mt-12">
+  <div class="flex flex-col md:flex-row px-6 mt-12">
     <TestimonialList />
   </div>
 </template>

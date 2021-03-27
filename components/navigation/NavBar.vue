@@ -2,7 +2,7 @@
   <nav
     class="shadow-lg transition-all flex items-center justify-between fixed top-0 left-0 md:h-1/10 w-full duration-400 ease-in"
     :class="[
-      { 'bg-white': scrollPosition >= 539 },
+      { 'bg-change': scrollPosition >= 539 },
       { 'linear-gradient': scrollPosition <= 540 || scrollPosition === 0 },
     ]"
   >
@@ -11,7 +11,10 @@
       @click="TOGGLE_NAV_DRAWER()"
       >&#9776;</span
     >
-    <h3 class="text-2xl cursor-pointer" @click="$router.push('/')">
+    <h3
+      class="text-2xl sm:text-3xl lg:text-4xl cursor-pointer"
+      @click="$router.push('/')"
+    >
       The Lewd Dudes
     </h3>
     <div class="flex justify-center items-center">
@@ -51,8 +54,14 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 nav {
   z-index: 2;
+  background-color: rgb(213, 184, 255);
+  transition: all 0.8s;
+}
+
+.bg-change {
+  background-color: white;
 }
 </style>

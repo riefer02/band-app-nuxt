@@ -5,7 +5,7 @@
     >
       <div class="block w-full p-4 lg:w-2/3 lg:order-1 xl:p-16">
         <div class="block">
-          <SectionHeaderText text="Caracteristicas de Patron" />
+          <SectionHeaderText text="Live Love Lewd" />
         </div>
         <div class="block">
           <FeaturesList :features="features" />
@@ -32,17 +32,17 @@ export default {
       image: require('@/assets/images/jordan-drums.jpg'),
       features: [
         {
-          title: 'Accessibility',
+          title: 'Live',
           description:
             '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         },
         {
-          title: 'Modular',
+          title: 'Love',
           description:
             '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         },
         {
-          title: 'Activities',
+          title: 'Lewd',
           description:
             '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         },

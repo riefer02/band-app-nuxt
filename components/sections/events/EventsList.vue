@@ -16,23 +16,26 @@ export default {
         {
           image: require('@/assets/images/rankin-1.jpg'),
           title: 'Music',
+          icon: 'music',
           description:
-            'Since 1963, the resort has been owned and operated by the Mescalero Apache Tribe. Only two years after its official opening in 1961, Robert O. Anderson, the wealthy oilman who built and opened the slopes, sold the resort to the able hands of the Mescalero Apaches. It wasn’t until the 1984-85 season that the slopes were appropriately named “Ski Apache”.',
+            'Since 1963, the resort has been owned and operated by the Mescalero Apache Tribe. Only two years after its official opening in 1961. Only two years after its official opening in 1961',
           link:
             'https://www.skiapache.com/?gclid=CjwKCAiAo5qABhBdEiwAOtGmbjBrd3kp9oc2P8BtUTFIlwhJvQiAMkdq79dcXMxhcUE2N_O6uy0U7RoCyBgQAvD_BwE',
         },
         {
           image: require('@/assets/images/riley-1.jpg'),
           title: 'Videos',
+          icon: 'video',
           description:
-            'Midtown is a uniquely Ruidoso experience filled with shopping and entertainment. Here you will find colorful and exciting shops, wine tasting adventures, terrific local eateries, and nightlife including live music and dancing. During the holiday season, beautiful decorations twinkle brightly transforming the district into a vision reminiscent of a fairytale. Wandering through Midtown is a must-do on every Ruidoso vacation.',
+            'Midtown is a uniquely Ruidoso experience filled with shopping and entertainment. Here you will find colorful and exciting shops. Only two years after its official opening in 1961',
           link: 'https://www.ruidoso.net/listing/detail/284',
         },
         {
           image: require('@/assets/images/scott-1.jpg'),
           title: 'Biography',
+          icon: 'book',
           description:
-            "New Mexico's premier mountain resort awaits with impeccable service, mouthwatering cuisine for every palate, incredible gaming action, and breathtaking alpine scenery to nurture your soul. Situated high in the picturesque mountains of Mescalero, New Mexico just outside of Ruidoso, guests return time and time again to Inn of the Mountain Gods to enjoy the clean mountain air, stunning panoramic views, and exciting entertainment options.",
+            "New Mexico's premier mountain resort awaits with impeccable service, mouthwatering cuisine for every palate, incredible gaming. Only two years after its official opening in 1961",
           link: 'https://innofthemountaingods.com/',
         },
       ],

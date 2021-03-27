@@ -1,9 +1,9 @@
 <template>
   <div class="flex justify-start items-center">
-    <font-awesome-icon :icon="['fa', link.icon]" class="mr-3 text-3xl fa-fw" />
+    <font-awesome-icon :icon="['fa', link.icon]" class="mr-5 text-4xl fa-fw" />
     <NuxtLink
       :id="link.text + '-link'"
-      class="block text-3xl mx-0 my-2 no-underline hover:text-white"
+      class="block text-4xl mx-0 my-2 no-underline hover:text-white"
       :to="link.link"
       @click="TOGGLE_NAV_DRAWER"
       >{{ link.text }}</NuxtLink

@@ -1,5 +1,7 @@
 <template>
-  <h2 class="text-center text-2xl lg:text-3xl">{{ text }}</h2>
+  <h2 class="text-center text-3xl xl:text-4xl underline mb-2">
+    {{ text }}
+  </h2>
 </template>
 
 <script>

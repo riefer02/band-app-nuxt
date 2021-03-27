@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <h3>{{ feature.title }}</h3>
+  <div class="relative">
+    <h3 class="feature__title text-3xl">{{ feature.title }}</h3>
     <ParagraphText :text="feature.description" />
   </div>
 </template>
@@ -25,4 +25,13 @@ export default {
 }
 </script>
 
-<style scoped></style>
+<style lang="scss" scoped>
+.feature {
+  &__title {
+    position: absolute;
+    opacity: 15%;
+    top: -60px;
+    font-size: 100px;
+  }
+}
+</style>

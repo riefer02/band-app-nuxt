@@ -1,11 +1,5 @@
 <template>
-  <div
-    v-if="isLoading"
-    class="bg-opacity-25 h-screen flex justify-center items-center linear-gradient"
-  >
-    <Loader />
-  </div>
-  <div v-else>
+  <div>
     <div class="linear-gradient">
       <div class="w-full overflow-hidden">
         <NavSystem />
@@ -23,13 +17,11 @@
 <script>
 import NavSystem from '../components/navigation/NavSystem'
 import Footer from '../components/sections/footer/Footer.vue'
-import Loader from '../components/utils/Loader'
 
 export default {
   components: {
     NavSystem,
     Footer,
-    Loader,
   },
 
   computed: {

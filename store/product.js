@@ -5,18 +5,18 @@ export const state = () => ({
 })
 
 export const mutations = {
-  setProducts(state, payload) {
+  SET_PRODUCTS(state, payload) {
     state.products = payload
   },
-  clearCart(state) {
+  CLEAR_CART(state) {
     state.cart = {}
     state.cartTotal = 0
   },
-  removeItem(state, item) {
+  REMOVE_ITEM(state, item) {
     state.cartTotal -= item.count
     // Vue.delete(state.cart, item.slug)
   },
-  addToCart(state, item) {
+  ADD_ITEM(state, item) {
     state.cartTotal++
     if (item.name in state.cart) {
       state.cart[item.name].count++
@@ -32,6 +32,6 @@ export const actions = {
   async fetchProducts({ commit }) {
     const snapshot = await this.$fire.firestore.collection('products').get()
     const products = snapshot.docs.map((doc) => doc.data())
-    commit('setProducts', products)
+    commit('SET_PRODUCTS', products)
   },
 }

@@ -1,5 +1,5 @@
 <template>
-  <div class="p-3 divide-y-2 shadow-md border">
+  <div class="p-3 divide-y-2 shadow-sm border">
     <div class="flex justify-between">
       <div class="">Discount Code:</div>
       <div>

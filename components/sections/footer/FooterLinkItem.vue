@@ -2,6 +2,7 @@
   <li class="mb-2">
     <a
       :href="item.link"
+      target="_blank"
       class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
       >{{ item.text }}</a
     >

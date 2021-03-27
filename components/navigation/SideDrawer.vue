@@ -67,7 +67,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 .backdrop-container {
   background: rgb(213, 184, 255);
   background: linear-gradient(
@@ -90,10 +90,6 @@ export default {
   color: rgb(242, 217, 128);
 }
 
-.open-drawer {
-  @apply w-3/4;
-}
-
 .open-backdrop {
   display: block;
   opacity: 1;
@@ -107,26 +103,18 @@ export default {
   opacity: 0;
 }
 
-@media screen and (min-width: 400px) {
-  .open-drawer {
-    @apply w-2/3;
-  }
-}
+.open-drawer {
+  @apply w-3/4;
 
-@media screen and (min-width: 768px) {
-  .open-drawer {
+  @include md {
     @apply w-5/12;
   }
-}
 
-@media screen and (min-width: 1000px) {
-  .open-drawer {
-    @apply w-1/4;
+  @include lg {
+    @apply w-2/5;
   }
-}
 
-@media screen and (min-width: 1400px) {
-  .open-drawer {
+  @include xxl {
     @apply w-2/12;
   }
 }
