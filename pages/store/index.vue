@@ -3,7 +3,7 @@
     <div class="w-full overflow-hidden shadow-md">
       <Header :header-data="viewData.header" />
     </div>
-    <div class="container mx-auto md:px-4 md:py-4">
+    <div class="store__view-container container mx-auto md:px-4 md:py-4">
       <div id="store" class="w-full overflow-hidden">
         <ProductList :items="productList" />
       </div>
@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import ProductList from '@/components/ecommerce/ProductList.vue'
+import ProductList from '@/components/ecommerce/products/ProductList.vue'
 import Header from '@/components/sections/header/Header.vue'
 export default {
   components: {
@@ -48,4 +48,10 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.store {
+  &__view-container {
+    min-height: 800px;
+  }
+}
+</style>

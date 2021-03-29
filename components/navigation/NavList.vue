@@ -1,5 +1,5 @@
 <template>
-  <ul class="nav__list">
+  <ul class="nav__list mt-12">
     <li v-for="link in links" :key="link.text">
       <NavItem :link="link" @click="TOGGLE_NAV_DRAWER" />
     </li>

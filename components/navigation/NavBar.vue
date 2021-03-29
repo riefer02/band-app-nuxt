@@ -27,7 +27,7 @@
 <script>
 import { mapMutations } from 'vuex'
 import BandSvg from '@/components/icons/BandSvg.vue'
-import CartIcon from '@/components/ecommerce/CartIcon.vue'
+import CartIcon from '@/components/icons/CartIcon.vue'
 
 export default {
   components: {

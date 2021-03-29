@@ -13,8 +13,8 @@
       class="sidenav-container transition-all bg-white flex flex-col items-center h-full overflow-x-hidden pt-2 fixed top-0 left-0 w-0 shadow-lg"
       :class="[{ 'open-drawer': isOpen }, { 'close-drawer': !isOpen }]"
     >
-      <span
-        class="drawer-close-button flex items-center justify-between h-12 mb-12 w-full"
+      <div
+        class="drawer-close-button flex items-center justify-between h-12 mb-4 w-full"
       >
         <div class="pl-5 pt-1">
           <CartIcon />
@@ -25,8 +25,10 @@
           @click="TOGGLE_NAV_DRAWER"
           >&times;</a
         >
-      </span>
-      <NavList />
+      </div>
+      <div>
+        <NavList />
+      </div>
     </div>
   </div>
 </template>
@@ -34,7 +36,7 @@
 <script>
 import { mapMutations } from 'vuex'
 import NavList from '@/components/navigation/NavList.vue'
-import CartIcon from '@/components/ecommerce/CartIcon.vue'
+import CartIcon from '@/components/icons/CartIcon.vue'
 
 export default {
   components: {

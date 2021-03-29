@@ -18,8 +18,8 @@
 </template>
 
 <script>
-import CartList from './CartList'
-import CartSummary from './CartSummary'
+import CartList from './cart/CartList'
+import CartSummary from './cart/CartSummary'
 import ShippingForm from './ShippingForm'
 export default {
   components: {

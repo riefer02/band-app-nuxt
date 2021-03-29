@@ -1,5 +1,5 @@
 <template>
-  <p class="text-sm xl:text-md px-2 py-2 leading-relaxed">
+  <p class="text-md xl:text-lg px-2 py-2 leading-loose">
     <span class="font-bold">{{ leadText }}</span
     >{{ trailText }}
   </p>

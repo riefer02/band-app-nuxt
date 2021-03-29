@@ -1,13 +1,13 @@
 <template>
   <div class="flex flex-wrap justify-center">
-    <div v-for="item in items" :key="item.id" class="m-2">
+    <div v-for="item in items" :key="item.id" class="w-full sm:w-1/2">
       <ProductCard :item="item" />
     </div>
   </div>
 </template>
 
 <script>
-import ProductCard from '@/components/ecommerce/ProductCard.vue'
+import ProductCard from '@/components/ecommerce/products/ProductCard.vue'
 export default {
   components: {
     ProductCard,

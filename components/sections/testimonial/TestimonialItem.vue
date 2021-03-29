@@ -15,9 +15,7 @@
       <div class="flex flex-col justify-between p-0 sm:p-2 md:p-4 xl:p-2">
         <QuoteText
           text="'It really saves me time and effort. FWR Bootstrap
-        Blocks is exactly what our business has been lacking. FWR Bootstrap
-        Blocks was worth a fortune to my company. FWR Bootstrap Blocks has
-        really helped our business. I'm good to go.'"
+        Blocks is exactly what our business has been lacking.'"
         />
         <div class="flex flex-col pr-4">
           <div class="text-indigo-500 font-bold uppercase mt-0 self-end">

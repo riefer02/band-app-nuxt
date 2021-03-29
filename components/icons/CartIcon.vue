@@ -9,13 +9,21 @@
     />
     <span
       class="h-auto w-auto rounded-full px-2 bg-white text-sm absolute top-0 right-0 z-2"
-      >{{ this.$store.state.product.cartTotal }}</span
+      >{{ this.$store.getters['product/cartTotal'] }}</span
     >
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  computed: {
+    cartTotal() {
+      let total
+      this.$store.cart.forEach((i) => (total = total + i.quantity))
+      return total
+    },
+  },
+}
 </script>
 
 <style lang="scss" scoped></style>

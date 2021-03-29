@@ -16,11 +16,15 @@
 <script>
 import CartItem from './CartItem.vue'
 export default {
+  mounted() {
+    this.curCart = this.$store.getters['product/cart']
+  },
   components: {
     CartItem,
   },
   data() {
     return {
+      curCart: [],
       productList: [
         {
           id: 1,

@@ -3,12 +3,12 @@
     <div class="py-8 px-4 bg-opacity-25">
       <div class="flex justify-center content-center flex-col">
         <h1
-          class="linear-gradient-text text-center antialiased text-5xl sm:text-6xl font-black leading-none mb-2 header-text-shadow"
+          class="linear-gradient-text text-center antialiased text-6xl font-black leading-none mb-2"
         >
           {{ texts.primaryText }}
         </h1>
         <h3
-          class="linear-gradient-text text-center antialiased text-3xl font-normal tracking-normal header-subtext-shadow"
+          class="linear-gradient-text text-center antialiased text-5xl font-normal tracking-normal"
         >
           {{ texts.secondaryText }}
         </h3>
